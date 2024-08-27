@@ -1,0 +1,32 @@
+chapitre: 5.2
+timecodes:
+  - time: 00:00
+    titre: "Zerolink y coinjoins chaumianos"
+  - time: 00:09
+    titre: "El papel de los coordinadores de coinjoin"
+  - time: 01:18
+    titre: "Firmas ciegas de Chaum"
+  - time: 02:44
+    titre: "Coinjoins chaumianos"
+  - time: 03:02
+    titre: "Paso 1: Registro de inputs"
+  - time: 03:40
+    titre: "Paso 2: Registro de outputs"
+  - time: 03:54
+    titre: "Paso 2: Registro de outputs"
+  - time: 04:29
+    titre: "Paso 3: Firma de la transacción"
+  - time: 04:40
+    titre: "Paso 3: Firma de la transacción"
+  - time: 05:56
+    titre: "¿Quién inventó el concepto de coinjoin?"
+  - time: 09:49
+    titre: "¿Quién inventó el concepto de coinjoin?"
+  - time: 11:53
+    titre: "Zerolink coinjoins"
+  - time: 12:28
+    titre: "Zerolink coinjoins"
+  - time: 13:03
+    titre: "Carteras pre-mix y post-mix"
+  - time: 14:22
+    titre: "La CIOH"

@@ -1,0 +1,32 @@
+chapitre: 5.2
+timecodes:
+  - time: 00:00
+    titre: "Zerolink và coinjoin Chaumian"
+  - time: 00:09
+    titre: "Vai trò của điều phối viên coinjoin"
+  - time: 01:18
+    titre: "Chữ ký mù của Chaum"
+  - time: 02:44
+    titre: "Coinjoin Chaumian"
+  - time: 03:02
+    titre: "Bước 1: Đăng ký đầu vào"
+  - time: 03:40
+    titre: "Bước 2: Đăng ký đầu ra"
+  - time: 03:54
+    titre: "Bước 2: Đăng ký đầu ra"
+  - time: 04:29
+    titre: "Bước 3: Ký giao dịch"
+  - time: 04:40
+    titre: "Bước 3: Ký giao dịch"
+  - time: 05:56
+    titre: "Ai đã phát minh ra khái niệm coinjoin?"
+  - time: 09:49
+    titre: "Ai đã phát minh ra khái niệm coinjoin?"
+  - time: 11:53
+    titre: "Zerolink coinjoin"
+  - time: 12:28
+    titre: "Zerolink coinjoin"
+  - time: 13:03
+    titre: "Ví pre-mix và post-mix"
+  - time: 14:22
+    titre: "CIOH"
