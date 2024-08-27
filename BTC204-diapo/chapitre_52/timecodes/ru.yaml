@@ -1,0 +1,32 @@
+chapitre: 5.2
+timecodes:
+  - time: 00:00
+    titre: "Zerolink и чаумские coinjoin"
+  - time: 00:09
+    titre: "Роль координаторов coinjoin"
+  - time: 01:18
+    titre: "Слепые подписи Чаума"
+  - time: 02:44
+    titre: "Чаумские coinjoin"
+  - time: 03:02
+    titre: "Шаг 1: Регистрация входов"
+  - time: 03:40
+    titre: "Шаг 2: Регистрация выходов"
+  - time: 03:54
+    titre: "Шаг 2: Регистрация выходов"
+  - time: 04:29
+    titre: "Шаг 3: Подписание транзакции"
+  - time: 04:40
+    titre: "Шаг 3: Подписание транзакции"
+  - time: 05:56
+    titre: "Кто придумал концепцию coinjoin?"
+  - time: 09:49
+    titre: "Кто придумал концепцию coinjoin?"
+  - time: 11:53
+    titre: "Zerolink coinjoin"
+  - time: 12:28
+    titre: "Zerolink coinjoin"
+  - time: 13:03
+    titre: "Кошельки pre-mix и post-mix"
+  - time: 14:22
+    titre: "CIOH"
