@@ -15,8 +15,8 @@ draw = ImageDraw.Draw(image)
 
 # Paths to fonts and images
 current_directory = os.path.dirname(__file__)
-fonts_path = os.path.join(current_directory, 'fonts')
-img_path = os.path.join(current_directory, 'img')
+fonts_path = os.path.join(current_directory, '../fonts')
+img_path = os.path.join(current_directory, '../img')
 
 # Load fonts
 try:
