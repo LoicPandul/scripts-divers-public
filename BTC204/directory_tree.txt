@@ -1,0 +1,53 @@
+BTC204/
+│
+├── scripts/
+│   ├── audio-splitter.py
+│   ├── video-creator.py
+│   ├── intro-slide.py
+│   └── main-slides.py
+│
+├── fonts/
+│   ├── Rubik-Bold.ttf
+│   ├── Rubik-Medium.ttf
+│   ├── Rubik-Italic.ttf
+│   ├── JetBrainsMono-Italic.ttf
+│   └── [other font files...]
+│
+├── img/
+│   ├── all white.png
+│   ├── all black.png
+│   ├── by-sa.png
+│   ├── openai.png
+│   ├── Eleven_Labs.png
+│   ├── instructeur.png
+│   ├── waveform.png
+│   └── [other image files...]
+│
+└── chapters/
+    ├── 52/
+    │   ├── audio/
+    │   │   ├── fr/
+    │   │   │   ├── 01.mp3
+    │   │   │   ├── 02.mp3
+    │   │   │   └── 03.mp3
+    │   │   └── en/
+    │   │       ├── 01.mp3
+    │   │       ├── 02.mp3
+    │   │       └── 03.mp3
+    │   ├── slides/
+    │   │   ├── fr/
+    │   │   │   ├── 01.png
+    │   │   │   ├── 02.png
+    │   │   │   └── 03.png
+    │   │   └── en/
+    │   │       ├── 01.png
+    │   │       ├── 02.png
+    │   │       └── 03.png
+    │   ├── video/
+    │   │   ├── fr.mp4
+    │   │   └── en.mp4
+    │   └── timecodes/
+    │       ├── fr.yaml
+    │       └── en.yaml
+    │
+    └── [other chapters...]
