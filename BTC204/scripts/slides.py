@@ -168,9 +168,21 @@ def create_main_slide(output_folder, schema_path, slide_number, yaml_data, timec
     photo_y = instructor_text_y + 120
     waveform_y = 800
 
-    # Utilisez une valeur par défaut pour l'instructeur si la clé n'est pas trouvée
+    # Use a default value for the instructor if the key is not found
     instructor_label = yaml_data.get("Instructeur", "Instructeur")
-    draw_main.text((width - right_rect_width + 120, instructor_text_y), instructor_label, font=fonts["medium"], fill=black)
+    
+    # Width of the instructor photo
+    photo_width = 400
+    photo_center_x = width - right_rect_width + 73 + (photo_width // 2)
+
+    # Width of the instructor text
+    text_width = draw_main.textbbox((0, 0), instructor_label, font=fonts["medium"])[2]
+
+    # x position of img instructor
+    text_x = photo_center_x - (text_width // 2)
+
+    # Draw the centered instructor text
+    draw_main.text((text_x, instructor_text_y), instructor_label, font=fonts["medium"], fill=black)
 
     instructor_photo = Image.open(os.path.join(img_path, "instructeur.png")).convert("RGBA")
     instructor_photo.thumbnail((400, 400))
@@ -248,7 +260,6 @@ def create_main_slide(output_folder, schema_path, slide_number, yaml_data, timec
     output_file_main = os.path.join(output_folder, f"{slide_number:02}.png")
     image_main.save(output_file_main)
     print(f"{Style.DIM}Slide {slide_number} successfully saved.")
-
 
 # Main script
 if __name__ == "__main__":
