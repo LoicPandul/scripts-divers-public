@@ -5,7 +5,7 @@ import os
 width, height = 2730, 1536
 white = (255, 255, 255)
 black = (0, 0, 0)
-orange_color = (255, 92, 0)  # Orange color added back
+orange_color = (255, 92, 0)
 current_directory = os.path.dirname(__file__)
 fonts_path = os.path.join(current_directory, '../fonts')
 img_path = os.path.join(current_directory, '../img')
@@ -117,7 +117,7 @@ def create_main_slide():
 
     # PBN black logo (main slides)
     logo_planb = Image.open(os.path.join(img_path, "all black.png")).convert("RGBA")
-    logo_planb.thumbnail((185, 185))  # Use the same size as the white logo
+    logo_planb.thumbnail((185, 185))
     image_main.paste(logo_planb, (width - logo_planb.size[0] - 50, 50), logo_planb)
 
     # Adjusted position for instructor text, photo, and waveform
