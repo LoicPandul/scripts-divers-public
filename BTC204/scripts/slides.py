@@ -1,5 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 import os
+from colorama import init, Fore, Style
+init(autoreset=True)
 
 # Shared dimensions, colors, and paths
 width, height = 2730, 1536
@@ -139,18 +141,34 @@ def create_main_slide(output_folder, schema_path, slide_number):
 
     draw_dashed_rounded_rectangle(draw_main, [200, 350, width - right_rect_width - 200, height - 200], outline=orange_color, width=8)
 
+    # Adding schema img to the main slide
+    try:
+        schema_image = Image.open(schema_path).convert("RGBA")
+    except (OSError, IOError) as e:
+        print(f"Error opening image {schema_path}: {e}")
+        return
 
+    # Increase the resolution of the schema image
+    original_width, original_height = schema_image.size
+    high_res_width, high_res_height = original_width * 2, original_height * 2
+    schema_image = schema_image.resize((high_res_width, high_res_height), Image.LANCZOS)
 
+    # Images size
+    margin = 55
 
+    frame_left, frame_top, frame_right, frame_bottom = (
+        200 + margin, 
+        350 + margin, 
+        width - right_rect_width - 200 - margin, 
+        height - 200 - margin
+    )
 
-    # Adding schema image to the main slide
-    schema_image = Image.open(schema_path).convert("RGBA")
+    max_width = frame_right - frame_left
+    max_height = frame_bottom - frame_top
 
-    # Définir la taille maximale en conservant les proportions
-    max_width = width - right_rect_width - 400
-    max_height = height - 700
     aspect_ratio = schema_image.width / schema_image.height
 
+    # Resize the image to fit
     if schema_image.width > max_width or schema_image.height > max_height:
         if schema_image.width / max_width > schema_image.height / max_height:
             new_width = max_width
@@ -160,48 +178,48 @@ def create_main_slide(output_folder, schema_path, slide_number):
             new_width = int(new_height * aspect_ratio)
         schema_image = schema_image.resize((new_width, new_height), Image.LANCZOS)
 
-    # Utiliser un masque de transparence pour gérer les coins arrondis
-    mask = Image.new("L", schema_image.size, 0)
-    draw_mask = ImageDraw.Draw(mask)
-    draw_mask.rounded_rectangle([0, 0, schema_image.size[0], schema_image.size[1]], 15, fill=255)
+    # Check if the img has transparency
+    has_transparency = schema_image.mode == "RGBA" and schema_image.getextrema()[3][0] < 255
 
-    # Ajouter un arrière-plan blanc si nécessaire pour éviter les fonds noirs
+    # Apply rounded corners only to no transparency img
+    if not has_transparency:
+        corner_radius = 30
+        mask = Image.new("L", schema_image.size, 0)
+        draw_mask = ImageDraw.Draw(mask)
+        draw_mask.rounded_rectangle([0, 0, schema_image.size[0], schema_image.size[1]], corner_radius, fill=255)
+        schema_image.putalpha(mask)
+
+    # White BG for non-transparent images
     background = Image.new("RGBA", schema_image.size, (255, 255, 255, 0))
     background.paste(schema_image, (0, 0), schema_image)
 
-    # Appliquer le masque pour les coins arrondis
-    background.putalpha(mask)
+    # Center img
+    center_x = frame_left + (frame_right - frame_left - schema_image.width) // 2
+    center_y = frame_top + (frame_bottom - frame_top - schema_image.height) // 2
 
-    # Centrer l'image du schéma
-    center_x = (width - right_rect_width) // 2 - background.width // 2
-    center_y = 400 + (height - 700) // 2 - background.height // 2
+    # Paste img
+    image_main.paste(schema_image, (center_x, center_y), schema_image)
 
-    # Coller l'image du schéma sur la diapositive principale
-    image_main.paste(background, (center_x, center_y), background)
-
-
-
-
-
-
-    
     add_footer(draw_main, image_main)
 
     # Save the main slide
     output_file_main = os.path.join(output_folder, f"{slide_number:02}.png")
     image_main.save(output_file_main)
-    print(f"Main slide {slide_number} successfully saved in: {output_file_main}")
+    print(f"{Style.DIM}Slide {slide_number} successfully saved.")
 
 # Main script
 if __name__ == "__main__":
     chapter = input("Enter the chapter number (e.g., 52): ").strip()
     assets_path = input("Enter the full path to the assets folder: ").strip().strip('"')
 
-    languages = input("Enter the languages to process (comma-separated) or press Enter for default: ").strip()
-    if not languages:
-        languages = default_languages
-    else:
-        languages = [lang.strip() for lang in languages.split(',')]
+    languages_input = input(f"Enter the languages codes to add (comma-separated) or press Enter for only default [{', '.join(default_languages)}]: ").strip()
+    
+    # Combine default languages with user input languages
+    languages = set(default_languages)
+    if languages_input:
+        input_languages = {lang.strip() for lang in languages_input.split(',')}
+        languages.update(input_languages)
+    languages = list(languages)
 
     base_chapter_path = os.path.join(current_directory, "../chapters", chapter)
     notext_path = os.path.join(assets_path, "notext", chapter)
@@ -210,6 +228,11 @@ if __name__ == "__main__":
         lang_path = os.path.join(assets_path, lang, chapter)
         output_folder = os.path.join(base_chapter_path, "slides", lang)
         os.makedirs(output_folder, exist_ok=True)
+
+        # Check if the language directory exists, otherwise "en" as default
+        if not os.path.exists(lang_path):
+            print(f"{Fore.YELLOW}Warning: Directory for language '{lang}' not found. Using English (en) as default.")
+            lang_path = os.path.join(assets_path, 'en', chapter)
 
         # Create the intro slide
         create_intro_slide(output_folder)
@@ -227,7 +250,7 @@ if __name__ == "__main__":
                     create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number)
                     slide_number += 1
 
-        print(f"Slides created for language: {lang}")
+        print(f"{Style.BRIGHT}{Fore.CYAN}Slides created for language: {lang}")
 
     # Handle case when only notext exists
     if not os.listdir(os.path.join(base_chapter_path, "slides")):
@@ -241,4 +264,4 @@ if __name__ == "__main__":
                 create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number)
                 slide_number += 1
 
-        print(f"General slides created in: {output_folder}")
+        print(f"{Style.BRIGHT}{Fore.CYAN}General slides created in: {output_folder}")
