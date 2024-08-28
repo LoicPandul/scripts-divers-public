@@ -1,6 +1,8 @@
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFont
 import os
 from colorama import init, Fore, Style
+import yaml
+
 init(autoreset=True)
 
 # Shared dimensions, colors, and paths
@@ -10,28 +12,49 @@ black = (0, 0, 0)
 orange_color = (255, 92, 0)
 current_directory = os.path.dirname(__file__)
 fonts_path = os.path.join(current_directory, '../fonts')
+alt_fonts_path = os.path.join(current_directory, '../fonts/alt')
 img_path = os.path.join(current_directory, '../img')
 default_languages = ["cs", "de", "en", "es", "fi", "fr", "it", "ja", "pt", "ru", "vi"]
 
 # Load fonts
-def load_fonts():
+def load_fonts(lang):
     try:
-        return {
-            "bold": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Bold.ttf"), 96),
-            "bold2": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Bold.ttf"), 72),
-            "regular": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Medium.ttf"), 48),
-            "medium": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Medium.ttf"), 55),
-            "jetbrains": ImageFont.truetype(os.path.join(fonts_path, "JetBrainsMono-Italic.ttf"), 24),
-            "italic": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Italic.ttf"), 20),
-        }
+        if lang == 'ja':
+            # Use Noto Sans JP for Japanese
+            return {
+                "bold": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Bold.ttf"), 96),
+                "bold2": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Bold.ttf"), 72),
+                "regular": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Regular.ttf"), 48),
+                "medium": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Medium.ttf"), 55),
+                "jetbrains": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Regular.ttf"), 24),
+                "italic": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Regular.ttf"), 20),
+            }
+        elif lang == 'vi':
+            # Use Noto Sans for Vietnamese
+            return {
+                "bold": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Bold.ttf"), 96),
+                "bold2": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Bold.ttf"), 72),
+                "regular": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Regular.ttf"), 48),
+                "medium": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Medium.ttf"), 55),
+                "jetbrains": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Regular.ttf"), 24),
+                "italic": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Regular.ttf"), 20),
+            }
+        else:
+            # Use Rubik for all other languages
+            return {
+                "bold": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Bold.ttf"), 96),
+                "bold2": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Bold.ttf"), 72),
+                "regular": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Medium.ttf"), 48),
+                "medium": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Medium.ttf"), 55),
+                "jetbrains": ImageFont.truetype(os.path.join(fonts_path, "JetBrainsMono-Italic.ttf"), 24),
+                "italic": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Italic.ttf"), 20),
+            }
     except OSError as e:
-        print(f"Error loading fonts: {e}")
+        print(f"Error loading fonts for language {lang}: {e}")
         exit(1)
 
-fonts = load_fonts()
-
 # Function to add common footer elements
-def add_footer(draw, image):
+def add_footer(draw, image, fonts):
     # Black footer bar
     draw.rectangle([0, 1480, 2730, 1536], fill=black)
 
@@ -52,14 +75,11 @@ def add_footer(draw, image):
 
     # IA Translated text
     text_ia_translated = "IA Translated"
-    bbox = fonts["italic"].getbbox(text_ia_translated)
-    text_width, text_height = bbox[2] - bbox[0], bbox[3] - bbox[1]
-    text_x = offset_x - text_width - 20
-    text_y = height - band_height + (band_height - text_height) // 2
-    draw.text((text_x, text_y), text_ia_translated, font=fonts["italic"], fill=white)
+    draw.text((offset_x - 140, offset_y), text_ia_translated, font=fonts["italic"], fill=white)
 
     # PGP Key text
-    draw.text((20, 1488), "BTC204 - FR - V.001 - 2024-08 - Plan₿ Network’s PGP: 5720 CD57 7E78 94C9 8DBD 580E 8F12 D0C6 3B1A 606E", font=fonts["jetbrains"], fill=white)
+    pgp_text = "BTC204 - FR - V.001 - 2024-08 - Plan₿ Network’s PGP: 5720 CD57 7E78 94C9 8DBD 580E 8F12 D0C6 3B1A 606E"
+    draw.text((20, 1488), pgp_text, font=fonts["jetbrains"], fill=white)
 
 # Function to draw a dashed rounded rectangle
 def draw_dashed_rounded_rectangle(draw, xy, outline, width=8):
@@ -83,22 +103,37 @@ def draw_dashed_rounded_rectangle(draw, xy, outline, width=8):
         draw.line([(left, y), (left, min(y + dash_length, bottom - corner_radius))], fill=outline, width=width)
         draw.line([(right, y), (right, min(y + dash_length, bottom - corner_radius))], fill=outline, width=width)
 
+# Function to load YAML data
+def load_yaml_data(chapter, lang):
+    yaml_path = os.path.join(current_directory, f"../chapters/{chapter}/timecodes/{lang}.yaml")
+    try:
+        with open(yaml_path, 'r', encoding='utf-8') as file:
+            return yaml.safe_load(file)
+    except FileNotFoundError:
+        print(f"{Fore.RED}Error: YAML file for language '{lang}' not found in chapter {chapter}.")
+        return None
+
 # Function to create introduction slide
-def create_intro_slide(output_folder):
+def create_intro_slide(output_folder, yaml_data, fonts):
     image_intro = Image.new("RGB", (width, height), orange_color)
     draw_intro = ImageDraw.Draw(image_intro)
     
+    chapter_text = yaml_data.get("chpt", "Unknown Chapter")
+    name_text = yaml_data.get("nm", "No Name")
+    chapter_label = yaml_data.get("Chapitre", "Chapitre")
+    author_label = yaml_data.get("Par", "Par")
+
     # Specific elements for intro slide
     draw_intro.rectangle([200, 600, 214, 800], fill=white)
-    draw_intro.text((240, 600), "name", font=fonts["bold"], fill=white)
-    draw_intro.text((240, 720), "BTC204 - Par Loïc Morel - Chapitre chpt", font=fonts["regular"], fill=black)
+    draw_intro.text((240, 600), name_text, font=fonts["bold"], fill=white)
+    draw_intro.text((240, 720), f"{chapter_label} {chapter_text} - {author_label} Loïc Morel", font=fonts["regular"], fill=black)
 
     # PBN white logo (intro slide)
     logo_all_white = Image.open(os.path.join(img_path, "all white.png")).convert("RGBA")
     logo_all_white.thumbnail((185, 185))
     image_intro.paste(logo_all_white, (width - logo_all_white.size[0] - 50, 50), logo_all_white)
 
-    add_footer(draw_intro, image_intro)
+    add_footer(draw_intro, image_intro, fonts)
 
     # Save the intro slide
     output_file_intro = os.path.join(output_folder, "01.png")
@@ -106,14 +141,19 @@ def create_intro_slide(output_folder):
     print(f"Intro slide successfully saved in: {output_file_intro}")
 
 # Function to create main slides with schemas
-def create_main_slide(output_folder, schema_path, slide_number):
+def create_main_slide(output_folder, schema_path, slide_number, yaml_data, timecode_index, fonts):
     image_main = Image.new("RGB", (width, height), white)
     draw_main = ImageDraw.Draw(image_main)
     
+    chapter_text = yaml_data.get("chpt", "Unknown Chapter")
+    name_text = yaml_data.get("nm", "No Name")
+    chapter_label = yaml_data.get("Chapitre", "Chapitre")
+    title_text = yaml_data["timecodes"][timecode_index].get("titre", "No Title")
+
     # Specific elements for main slide
-    draw_main.text((50, 50), "BTC204 - Chapitre chpt - nm", font=fonts["regular"], fill=black)
+    draw_main.text((50, 50), f"{chapter_label} {chapter_text} - {name_text}", font=fonts["regular"], fill=black)
     draw_main.rectangle([50, 125, 75, 275], fill=orange_color)
-    draw_main.text((120, 160), "titre", font=fonts["bold2"], fill=black)
+    draw_main.text((120, 160), title_text, font=fonts["bold2"], fill=black)
 
     right_rect_width = width // 5
     draw_main.rectangle([width - right_rect_width, 0, width, height], fill=orange_color)
@@ -128,7 +168,9 @@ def create_main_slide(output_folder, schema_path, slide_number):
     photo_y = instructor_text_y + 120
     waveform_y = 800
 
-    draw_main.text((width - right_rect_width + 120, instructor_text_y), "Instructeur", font=fonts["medium"], fill=black)
+    # Utilisez une valeur par défaut pour l'instructeur si la clé n'est pas trouvée
+    instructor_label = yaml_data.get("Instructeur", "Instructeur")
+    draw_main.text((width - right_rect_width + 120, instructor_text_y), instructor_label, font=fonts["medium"], fill=black)
 
     instructor_photo = Image.open(os.path.join(img_path, "instructeur.png")).convert("RGBA")
     instructor_photo.thumbnail((400, 400))
@@ -200,12 +242,13 @@ def create_main_slide(output_folder, schema_path, slide_number):
     # Paste img
     image_main.paste(schema_image, (center_x, center_y), schema_image)
 
-    add_footer(draw_main, image_main)
+    add_footer(draw_main, image_main, fonts)
 
     # Save the main slide
     output_file_main = os.path.join(output_folder, f"{slide_number:02}.png")
     image_main.save(output_file_main)
     print(f"{Style.DIM}Slide {slide_number} successfully saved.")
+
 
 # Main script
 if __name__ == "__main__":
@@ -229,39 +272,54 @@ if __name__ == "__main__":
         output_folder = os.path.join(base_chapter_path, "slides", lang)
         os.makedirs(output_folder, exist_ok=True)
 
+        # Load YAML data for the current language
+        yaml_data = load_yaml_data(chapter, lang)
+        if yaml_data is None:
+            continue
+
+        # Load fonts based on the current language
+        fonts = load_fonts(lang)
+
         # Check if the language directory exists, otherwise "en" as default
         if not os.path.exists(lang_path):
             print(f"{Fore.YELLOW}Warning: Directory for language '{lang}' not found. Using English (en) as default.")
             lang_path = os.path.join(assets_path, 'en', chapter)
 
         # Create the intro slide
-        create_intro_slide(output_folder)
+        create_intro_slide(output_folder, yaml_data, fonts)
 
         slide_number = 2  # Start after intro
+        timecode_index = 1  # Start at second timecode (first is intro)
+
         if os.path.exists(lang_path):
             for image_name in sorted(os.listdir(lang_path)):
                 if image_name.endswith(".webp"):
-                    create_main_slide(output_folder, os.path.join(lang_path, image_name), slide_number)
+                    create_main_slide(output_folder, os.path.join(lang_path, image_name), slide_number, yaml_data, timecode_index, fonts)
                     slide_number += 1
+                    timecode_index += 1
 
         if os.path.exists(notext_path):
             for image_name in sorted(os.listdir(notext_path)):
                 if image_name.endswith(".webp"):
-                    create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number)
+                    create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number, yaml_data, timecode_index, fonts)
                     slide_number += 1
+                    timecode_index += 1
 
         print(f"{Style.BRIGHT}{Fore.CYAN}Slides created for language: {lang}")
 
-    # Handle case when only notext exists
+    # Handle case when only /notext exists
     if not os.listdir(os.path.join(base_chapter_path, "slides")):
         output_folder = os.path.join(base_chapter_path, "slides", "gen")
         os.makedirs(output_folder, exist_ok=True)
-        create_intro_slide(output_folder)
+        create_intro_slide(output_folder, yaml_data, fonts)
 
         slide_number = 2
+        timecode_index = 1
+
         for image_name in sorted(os.listdir(notext_path)):
             if image_name.endswith(".webp"):
-                create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number)
+                create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number, yaml_data, timecode_index, fonts)
                 slide_number += 1
+                timecode_index += 1
 
         print(f"{Style.BRIGHT}{Fore.CYAN}General slides created in: {output_folder}")
