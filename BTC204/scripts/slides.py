@@ -2,6 +2,8 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 from colorama import init, Fore, Style
 import yaml
+import sys
+import time
 
 init(autoreset=True)
 
@@ -138,7 +140,7 @@ def create_intro_slide(output_folder, yaml_data, fonts):
     # Save the intro slide
     output_file_intro = os.path.join(output_folder, "01.png")
     image_intro.save(output_file_intro)
-    print(f"Intro slide successfully saved in: {output_file_intro}")
+    print(f"{Style.DIM}- Slide 01 created (intro)")
 
 # Function to create main slides with schemas
 def create_main_slide(output_folder, schema_path, slide_number, yaml_data, timecode_index, fonts):
@@ -259,14 +261,21 @@ def create_main_slide(output_folder, schema_path, slide_number, yaml_data, timec
     # Save the main slide
     output_file_main = os.path.join(output_folder, f"{slide_number:02}.png")
     image_main.save(output_file_main)
-    print(f"{Style.DIM}Slide {slide_number} successfully saved.")
+    print(f"{Style.DIM}- Slide {slide_number:02} created")
+
+# Animated message
+def print_animated_message(message):
+    sys.stdout.write(message + '\n')
+    sys.stdout.flush()
+    for _ in message:
+        time.sleep(0.1)  # Optional animation delay
 
 # Main script
 if __name__ == "__main__":
-    chapter = input("Enter the chapter number (e.g., 52): ").strip()
+    chapter = input(f"{Fore.LIGHTBLUE_EX}Enter the chapter number (e.g., 52): {Style.RESET_ALL}").strip()
     assets_path = input("Enter the full path to the assets folder: ").strip().strip('"')
 
-    languages_input = input(f"Enter the languages codes to add (comma-separated) or press Enter for only default [{', '.join(default_languages)}]: ").strip()
+    languages_input = input(f"{Fore.MAGENTA}Enter the languages codes to add (comma-separated) or press Enter for only default [{', '.join(default_languages)}]: ").strip()
     
     # Combine default languages with user input languages
     languages = set(default_languages)
@@ -318,19 +327,5 @@ if __name__ == "__main__":
 
         print(f"{Style.BRIGHT}{Fore.CYAN}Slides created for language: {lang}")
 
-    # Handle case when only /notext exists
-    if not os.listdir(os.path.join(base_chapter_path, "slides")):
-        output_folder = os.path.join(base_chapter_path, "slides", "gen")
-        os.makedirs(output_folder, exist_ok=True)
-        create_intro_slide(output_folder, yaml_data, fonts)
-
-        slide_number = 2
-        timecode_index = 1
-
-        for image_name in sorted(os.listdir(notext_path)):
-            if image_name.endswith(".webp"):
-                create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number, yaml_data, timecode_index, fonts)
-                slide_number += 1
-                timecode_index += 1
-
-        print(f"{Style.BRIGHT}{Fore.CYAN}General slides created in: {output_folder}")
+    message = f"{Fore.GREEN}{Style.BRIGHT}THE SCRIPT HAS FINISHED!{Style.RESET_ALL}"
+    print_animated_message(message)
