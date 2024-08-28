@@ -3,8 +3,7 @@ BTC204/
 ├── scripts/
 │   ├── audio-splitter.py
 │   ├── video-creator.py
-│   ├── intro-slide.py
-│   └── main-slides.py
+│   └── slides.py
 │
 ├── fonts/
 │   ├── Rubik-Bold.ttf
