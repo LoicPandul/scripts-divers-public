@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 import os
 
 # Shared dimensions, colors, and paths
@@ -9,6 +9,7 @@ orange_color = (255, 92, 0)
 current_directory = os.path.dirname(__file__)
 fonts_path = os.path.join(current_directory, '../fonts')
 img_path = os.path.join(current_directory, '../img')
+default_languages = ["cs", "de", "en", "es", "fi", "fr", "it", "ja", "pt", "ru", "vi"]
 
 # Load fonts
 def load_fonts():
@@ -81,7 +82,7 @@ def draw_dashed_rounded_rectangle(draw, xy, outline, width=8):
         draw.line([(right, y), (right, min(y + dash_length, bottom - corner_radius))], fill=outline, width=width)
 
 # Function to create introduction slide
-def create_intro_slide():
+def create_intro_slide(output_folder):
     image_intro = Image.new("RGB", (width, height), orange_color)
     draw_intro = ImageDraw.Draw(image_intro)
     
@@ -98,12 +99,12 @@ def create_intro_slide():
     add_footer(draw_intro, image_intro)
 
     # Save the intro slide
-    output_file_intro = os.path.join(current_directory, "01.png")
+    output_file_intro = os.path.join(output_folder, "01.png")
     image_intro.save(output_file_intro)
     print(f"Intro slide successfully saved in: {output_file_intro}")
 
-# Function to create main slide
-def create_main_slide():
+# Function to create main slides with schemas
+def create_main_slide(output_folder, schema_path, slide_number):
     image_main = Image.new("RGB", (width, height), white)
     draw_main = ImageDraw.Draw(image_main)
     
@@ -137,14 +138,107 @@ def create_main_slide():
     image_main.paste(waveform, (width - right_rect_width + 5, waveform_y), waveform)
 
     draw_dashed_rounded_rectangle(draw_main, [200, 350, width - right_rect_width - 200, height - 200], outline=orange_color, width=8)
+
+
+
+
+
+    # Adding schema image to the main slide
+    schema_image = Image.open(schema_path).convert("RGBA")
+
+    # Définir la taille maximale en conservant les proportions
+    max_width = width - right_rect_width - 400
+    max_height = height - 700
+    aspect_ratio = schema_image.width / schema_image.height
+
+    if schema_image.width > max_width or schema_image.height > max_height:
+        if schema_image.width / max_width > schema_image.height / max_height:
+            new_width = max_width
+            new_height = int(new_width / aspect_ratio)
+        else:
+            new_height = max_height
+            new_width = int(new_height * aspect_ratio)
+        schema_image = schema_image.resize((new_width, new_height), Image.LANCZOS)
+
+    # Utiliser un masque de transparence pour gérer les coins arrondis
+    mask = Image.new("L", schema_image.size, 0)
+    draw_mask = ImageDraw.Draw(mask)
+    draw_mask.rounded_rectangle([0, 0, schema_image.size[0], schema_image.size[1]], 15, fill=255)
+
+    # Ajouter un arrière-plan blanc si nécessaire pour éviter les fonds noirs
+    background = Image.new("RGBA", schema_image.size, (255, 255, 255, 0))
+    background.paste(schema_image, (0, 0), schema_image)
+
+    # Appliquer le masque pour les coins arrondis
+    background.putalpha(mask)
+
+    # Centrer l'image du schéma
+    center_x = (width - right_rect_width) // 2 - background.width // 2
+    center_y = 400 + (height - 700) // 2 - background.height // 2
+
+    # Coller l'image du schéma sur la diapositive principale
+    image_main.paste(background, (center_x, center_y), background)
+
+
+
+
+
+
     
     add_footer(draw_main, image_main)
 
     # Save the main slide
-    output_file_main = os.path.join(current_directory, "02.png")
+    output_file_main = os.path.join(output_folder, f"{slide_number:02}.png")
     image_main.save(output_file_main)
-    print(f"Main slide successfully saved in: {output_file_main}")
+    print(f"Main slide {slide_number} successfully saved in: {output_file_main}")
 
-# Run the functions to create slides
-create_intro_slide()
-create_main_slide()
+# Main script
+if __name__ == "__main__":
+    chapter = input("Enter the chapter number (e.g., 52): ").strip()
+    assets_path = input("Enter the full path to the assets folder: ").strip().strip('"')
+
+    languages = input("Enter the languages to process (comma-separated) or press Enter for default: ").strip()
+    if not languages:
+        languages = default_languages
+    else:
+        languages = [lang.strip() for lang in languages.split(',')]
+
+    base_chapter_path = os.path.join(current_directory, "../chapters", chapter)
+    notext_path = os.path.join(assets_path, "notext", chapter)
+    
+    for lang in languages:
+        lang_path = os.path.join(assets_path, lang, chapter)
+        output_folder = os.path.join(base_chapter_path, "slides", lang)
+        os.makedirs(output_folder, exist_ok=True)
+
+        # Create the intro slide
+        create_intro_slide(output_folder)
+
+        slide_number = 2  # Start after intro
+        if os.path.exists(lang_path):
+            for image_name in sorted(os.listdir(lang_path)):
+                if image_name.endswith(".webp"):
+                    create_main_slide(output_folder, os.path.join(lang_path, image_name), slide_number)
+                    slide_number += 1
+
+        if os.path.exists(notext_path):
+            for image_name in sorted(os.listdir(notext_path)):
+                if image_name.endswith(".webp"):
+                    create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number)
+                    slide_number += 1
+
+        print(f"Slides created for language: {lang}")
+
+    # Handle case when only notext exists
+    if not os.listdir(os.path.join(base_chapter_path, "slides")):
+        output_folder = os.path.join(base_chapter_path, "slides", "gen")
+        os.makedirs(output_folder, exist_ok=True)
+        create_intro_slide(output_folder)
+
+        slide_number = 2
+        for image_name in sorted(os.listdir(notext_path)):
+            if image_name.endswith(".webp"):
+                create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number)
+                slide_number += 1
+
+        print(f"General slides created in: {output_folder}")
