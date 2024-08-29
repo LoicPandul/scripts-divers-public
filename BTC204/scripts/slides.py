@@ -2,8 +2,6 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 from colorama import init, Fore, Style
 import yaml
-import sys
-import time
 
 init(autoreset=True)
 
@@ -263,19 +261,12 @@ def create_main_slide(output_folder, schema_path, slide_number, yaml_data, timec
     image_main.save(output_file_main)
     print(f"{Style.DIM}- Slide {slide_number:02} created")
 
-# Animated message
-def print_animated_message(message):
-    sys.stdout.write(message + '\n')
-    sys.stdout.flush()
-    for _ in message:
-        time.sleep(0.1)  # Optional animation delay
-
 # Main script
 if __name__ == "__main__":
     chapter = input(f"{Fore.LIGHTBLUE_EX}Enter the chapter number (e.g., 52): {Style.RESET_ALL}").strip()
     assets_path = input("Enter the full path to the assets folder: ").strip().strip('"')
 
-    languages_input = input(f"{Fore.MAGENTA}Enter the languages codes to add (comma-separated) or press Enter for only default [{', '.join(default_languages)}]: ").strip()
+    languages_input = input(f"{Fore.LIGHTBLUE_EX}Enter the languages codes to add (comma-separated) or press Enter for only default [{', '.join(default_languages)}]: ").strip()
     
     # Combine default languages with user input languages
     languages = set(default_languages)
@@ -327,5 +318,4 @@ if __name__ == "__main__":
 
         print(f"{Style.BRIGHT}{Fore.CYAN}Slides created for language: {lang}")
 
-    message = f"{Fore.GREEN}{Style.BRIGHT}THE SCRIPT HAS FINISHED!{Style.RESET_ALL}"
-    print_animated_message(message)
+    print(f"{Fore.GREEN}THE SCRIPT HAS FINISHED!{Style.RESET_ALL}")

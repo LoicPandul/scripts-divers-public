@@ -4,33 +4,33 @@ Chapitre: Chapitre
 Par: Par
 Instructeur: Instructeur
 timecodes:
-  - time: 00:00
+  - time: "00:00"
     titre: "Zerolink et chaumian coinjoins"
-  - time: 00:09
+  - time: "00:10"
     titre: "Le rôle des coordinateurs de coinjoins"
-  - time: 01:18
+  - time: "01:19"
     titre: "Les signatures aveugles de Chaum"
-  - time: 02:44
+  - time: "02:46"
     titre: "Les coinjoins chaumiens"
-  - time: 03:02
+  - time: "03:04"
     titre: "Étape 1 : L'inscription des inputs"
-  - time: 03:40
+  - time: "03:43"
     titre: "Étape 2 : L'inscription des outputs"
-  - time: 03:54
+  - time: "03:57"
     titre: "Étape 2 : L'inscription des outputs"
-  - time: 04:29
+  - time: "04:33"
     titre: "Étape 3 : La signature de la transaction"
-  - time: 04:40
+  - time: "04:44"
     titre: "Étape 3 : La signature de la transaction"
-  - time: 05:56
+  - time: "06:01"
     titre: "Qui a inventé le concept de coinjoin ?"
-  - time: 09:49
+  - time: "09:53"
     titre: "Qui a inventé le concept de coinjoin ?"
-  - time: 11:53
+  - time: "12:03"
     titre: "Zerolink coinjoins"
-  - time: 12:28
+  - time: "12:32"
     titre: "Zerolink coinjoins"
-  - time: 13:03
+  - time: "13:06"
     titre: "Portefeuilles pre-mix et post-mix"
-  - time: 14:22
+  - time: "14:26"
     titre: "La CIOH"
