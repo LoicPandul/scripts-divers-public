@@ -22,28 +22,28 @@ def load_fonts(lang):
         if lang == 'ja':
             # Use Noto Sans JP for Japanese
             return {
-                "bold": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Bold.ttf"), 96),
-                "bold2": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Bold.ttf"), 72),
-                "regular": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Regular.ttf"), 48),
-                "medium": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Medium.ttf"), 55),
-                "jetbrains": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Regular.ttf"), 24),
-                "italic": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Regular.ttf"), 20),
+                "bold": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Bold.ttf"), 86),
+                "bold2": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Bold.ttf"), 50),
+                "regular": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Regular.ttf"), 38),
+                "medium": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansJP-Medium.ttf"), 45),
+                "jetbrains": ImageFont.truetype(os.path.join(fonts_path, "JetBrainsMono-Italic.ttf"), 24),
+                "italic": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Italic.ttf"), 20),
             }
         elif lang == 'vi':
             # Use Noto Sans for Vietnamese
             return {
                 "bold": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Bold.ttf"), 96),
-                "bold2": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Bold.ttf"), 72),
+                "bold2": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Bold.ttf"), 60),
                 "regular": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Regular.ttf"), 48),
                 "medium": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Medium.ttf"), 55),
-                "jetbrains": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Regular.ttf"), 24),
-                "italic": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSans-Regular.ttf"), 20),
+                "jetbrains": ImageFont.truetype(os.path.join(fonts_path, "JetBrainsMono-Italic.ttf"), 24),
+                "italic": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Italic.ttf"), 20),
             }
         else:
             # Use Rubik for all other languages
             return {
                 "bold": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Bold.ttf"), 96),
-                "bold2": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Bold.ttf"), 72),
+                "bold2": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Bold.ttf"), 60),
                 "regular": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Medium.ttf"), 48),
                 "medium": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Medium.ttf"), 55),
                 "jetbrains": ImageFont.truetype(os.path.join(fonts_path, "JetBrainsMono-Italic.ttf"), 24),

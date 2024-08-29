@@ -4,33 +4,33 @@ Chapitre: Kapitel
 Par: Von
 Instructeur: Instruktor
 timecodes:
-  - time: 00:00
+  - time: "00:00"
     titre: "Zerolink und Chaumian Coinjoins"
-  - time: 00:09
+  - time: "00:10"
     titre: "Die Rolle der Coinjoin-Koordinatoren"
-  - time: 01:18
+  - time: "01:19"
     titre: "Chaums Blindunterschriften"
-  - time: 02:44
-    titre: "Chaumian Coinjoins"
-  - time: 03:02
+  - time: "02:46"
     titre: "Schritt 1: Anmeldung der Inputs"
-  - time: 03:40
+  - time: "03:43"
+    titre: "Schritt 1: Anmeldung der Inputs"
+  - time: "03:57"
     titre: "Schritt 2: Anmeldung der Outputs"
-  - time: 03:54
+  - time: "04:33"
     titre: "Schritt 2: Anmeldung der Outputs"
-  - time: 04:29
+  - time: "04:44"
     titre: "Schritt 3: Signierung der Transaktion"
-  - time: 04:40
+  - time: "06:01"
     titre: "Schritt 3: Signierung der Transaktion"
-  - time: 05:56
+  - time: "09:53"
     titre: "Wer hat das Coinjoin-Konzept erfunden?"
-  - time: 09:49
-    titre: "Wer hat das Coinjoin-Konzept erfunden?"
-  - time: 11:53
+  - time: "11:57"
+    titre: "Wer hat den Begriff erfunden?"
+  - time: "12:04"
     titre: "Zerolink Coinjoins"
-  - time: 12:28
+  - time: "12:33"
     titre: "Zerolink Coinjoins"
-  - time: 13:03
+  - time: "13:07"
     titre: "Pre-Mix und Post-Mix Wallets"
-  - time: 14:22
+  - time: "14:27"
     titre: "Die CIOH"

@@ -4,33 +4,33 @@ Chapitre: Capitolo
 Par: Da
 Instructeur: Istruttore
 timecodes:
-  - time: 00:00
+  - time: "00:00"
     titre: "Zerolink e coinjoin chaumiani"
-  - time: 00:09
+  - time: "00:10"
     titre: "Il ruolo dei coordinatori di coinjoin"
-  - time: 01:18
+  - time: "01:19"
     titre: "Le firme cieche di Chaum"
-  - time: 02:44
-    titre: "Coinjoin chaumiani"
-  - time: 03:02
+  - time: "02:46"
     titre: "Fase 1: Registrazione degli input"
-  - time: 03:40
+  - time: "03:43"
+    titre: "Fase 1: Registrazione degli input"
+  - time: "03:57"
     titre: "Fase 2: Registrazione degli output"
-  - time: 03:54
+  - time: "04:33"
     titre: "Fase 2: Registrazione degli output"
-  - time: 04:29
+  - time: "04:44"
     titre: "Fase 3: Firma della transazione"
-  - time: 04:40
+  - time: "06:01"
     titre: "Fase 3: Firma della transazione"
-  - time: 05:56
+  - time: "09:53"
     titre: "Chi ha inventato il concetto di coinjoin?"
-  - time: 09:49
-    titre: "Chi ha inventato il concetto di coinjoin?"
-  - time: 11:53
+  - time: "11:57"
+    titre: "Chi ha inventato il termine?"
+  - time: "12:04"
     titre: "Zerolink coinjoin"
-  - time: 12:28
+  - time: "12:33"
     titre: "Zerolink coinjoin"
-  - time: 13:03
+  - time: "13:07"
     titre: "Portafogli pre-mix e post-mix"
-  - time: 14:22
+  - time: "14:27"
     titre: "La CIOH"

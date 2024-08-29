@@ -2,6 +2,9 @@ from pydub import AudioSegment
 from colorama import init, Fore, Style
 import os
 import yaml
+import sys
+import time
+import threading
 
 init(autoreset=True)
 
@@ -21,12 +24,23 @@ def seconds_to_mmss(seconds):
     seconds = int(seconds % 60)
     return f"{minutes:02}:{seconds:02}"
 
+# Processing animation
+def show_processing(stop_event):
+    spinner = ['|', '/', '-', '\\']
+    idx = 0
+    while not stop_event.is_set():
+        sys.stdout.write(f"\r{Fore.YELLOW}Processing... {spinner[idx % len(spinner)]}{Style.RESET_ALL}")
+        sys.stdout.flush()
+        idx += 1
+        time.sleep(0.1)
+    sys.stdout.write("\r" + " " * 20 + "\r")
+
 # Split audio
 def split_audio(chapter, lang, timecodes):
-    audio_path = os.path.join(current_directory, f"../chapters/{chapter}/audio/{lang}/{lang}.mp3")
+    audio_path = os.path.join(current_directory, f"../chapters/{chapter}/audio/{lang}/{lang}.wav")
     output_folder = os.path.join(current_directory, f"../chapters/{chapter}/audio/{lang}")
 
-    audio = AudioSegment.from_mp3(audio_path)
+    audio = AudioSegment.from_wav(audio_path)
     
     for index, timecode in enumerate(timecodes):
         try:
@@ -39,9 +53,9 @@ def split_audio(chapter, lang, timecodes):
                 end_time = len(audio)
 
             segment = audio[start_time:end_time]
-            segment.export(os.path.join(output_folder, f"{index + 1:02}.mp3"), format="mp3")
+            segment.export(os.path.join(output_folder, f"{index + 1:02}.wav"), format="wav")
 
-            print(f"{Style.DIM}- Segment {index + 1:02}.mp3 created from {timecode['time']} to {next_time if index + 1 < len(timecodes) else 'end of file'}")
+            print(f"{Style.DIM}- Segment {index + 1:02}.wav created from {timecode['time']} to {next_time if index + 1 < len(timecodes) else 'end of file'}")
         except ValueError as e:
             print(f"{Fore.RED}Error processing segment {index + 1}: {e}")
 
@@ -60,6 +74,15 @@ if __name__ == "__main__":
     except yaml.YAMLError as e:
         print(f"{Fore.RED}Error reading YAML file: {e}")
     
-    split_audio(chapter, lang, timecodes)
+    # Start the processing animation
+    stop_event = threading.Event()
+    processing_thread = threading.Thread(target=show_processing, args=(stop_event,))
+    processing_thread.start()
+
+    try:
+        split_audio(chapter, lang, timecodes)
+    finally:
+        stop_event.set()
+        processing_thread.join()
 
     print(f"{Fore.GREEN}THE SCRIPT HAS FINISHED!{Style.RESET_ALL}")

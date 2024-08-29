@@ -4,33 +4,33 @@ Chapitre: Capítulo
 Par: Por
 Instructeur: Instructor
 timecodes:
-  - time: 00:00
+  - time: "00:00"
     titre: "Zerolink y coinjoins chaumianos"
-  - time: 00:09
+  - time: "00:10"
     titre: "El papel de los coordinadores de coinjoin"
-  - time: 01:18
+  - time: "01:19"
     titre: "Firmas ciegas de Chaum"
-  - time: 02:44
-    titre: "Coinjoins chaumianos"
-  - time: 03:02
+  - time: "02:46"
     titre: "Paso 1: Registro de inputs"
-  - time: 03:40
+  - time: "03:43"
+    titre: "Paso 1: Registro de inputs"
+  - time: "03:57"
     titre: "Paso 2: Registro de outputs"
-  - time: 03:54
+  - time: "04:33"
     titre: "Paso 2: Registro de outputs"
-  - time: 04:29
+  - time: "04:44"
     titre: "Paso 3: Firma de la transacción"
-  - time: 04:40
+  - time: "06:01"
     titre: "Paso 3: Firma de la transacción"
-  - time: 05:56
+  - time: "09:53"
     titre: "¿Quién inventó el concepto de coinjoin?"
-  - time: 09:49
-    titre: "¿Quién inventó el concepto de coinjoin?"
-  - time: 11:53
+  - time: "11:57"
+    titre: "¿Quién inventó el término?"
+  - time: "12:04"
     titre: "Zerolink coinjoins"
-  - time: 12:28
+  - time: "12:33"
     titre: "Zerolink coinjoins"
-  - time: 13:03
+  - time: "13:07"
     titre: "Carteras pre-mix y post-mix"
-  - time: 14:22
+  - time: "14:27"
     titre: "La CIOH"
