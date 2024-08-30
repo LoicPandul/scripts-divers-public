@@ -10,7 +10,11 @@ BTC204/
 │   ├── Rubik-Medium.ttf
 │   ├── Rubik-Italic.ttf
 │   ├── JetBrainsMono-Italic.ttf
-│   └── [other font files...]
+│   └── alt/
+│       ├── NotoSans-Bold.ttf
+│       ├── NotoSansJP-Medium.ttf
+│       ├── NotoSansSC-Bold.ttf
+│       └── [other alt fonts files...]
 │
 ├── img/
 │   ├── all white.png
@@ -21,6 +25,15 @@ BTC204/
 │   ├── instructeur.png
 │   ├── waveform.png
 │   └── [other image files...]
+│
+├── config/
+│   ├── settings.yaml
+│   └── lang/
+│       ├── config_cs.yaml
+│       ├── config_en.yaml
+│       ├── config_fr.yaml
+│       ├── config_ja.yaml
+│       └── [other languages configuration files...]
 │
 └── chapters/
     ├── 52/
