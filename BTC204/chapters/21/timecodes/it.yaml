@@ -1,0 +1,13 @@
+chpt: 2.1
+nm: Il modello UTXO di Bitcoin
+timecodes: 
+  - time: "00:00"
+    titre: "Il modello UTXO di Bitcoin"
+  - time: "00:39"
+    titre: "Gli UTXO su Bitcoin"
+  - time: "03:16"
+    titre: "Condizioni di spesa"
+  - time: "03:56"
+    titre: "Chiave privata e chiave pubblica"
+  - time: "04:50"
+    titre: "Il portafoglio Bitcoin"

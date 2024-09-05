@@ -1,0 +1,13 @@
+chpt: 2.1
+nm: 比特币的UTXO模型
+timecodes: 
+  - time: "00:00"
+    titre: "比特币的UTXO模型"
+  - time: "00:39"
+    titre: "比特币的UTXO"
+  - time: "03:16"
+    titre: "支出条件"
+  - time: "03:56"
+    titre: "私钥和公钥"
+  - time: "04:50"
+    titre: "比特币钱包"
