@@ -13,8 +13,8 @@ def create_video(chapter, lang):
     video_folder = os.path.join(current_directory, f"../chapters/{chapter}/video")
     os.makedirs(video_folder, exist_ok=True)
 
-    # List all audio and img files, sorted by name
-    audio_files = sorted([f for f in os.listdir(audio_folder) if f.endswith(".wav")])
+    # List all audio and image files, sorted by name
+    audio_files = sorted([f for f in os.listdir(audio_folder) if f.endswith((".wav", ".mp3"))])
     slide_files = sorted([f for f in os.listdir(slides_folder) if f.endswith(".png")])
 
     clips = []
@@ -22,7 +22,7 @@ def create_video(chapter, lang):
     for i, (audio_file, slide_file) in enumerate(zip(audio_files, slide_files)):
         audio_path = os.path.join(audio_folder, audio_file)
         slide_path = os.path.join(slides_folder, slide_file)
-        
+
         audio_clip = AudioFileClip(audio_path)
         image_clip = ImageClip(slide_path).set_duration(audio_clip.duration)
         image_clip = image_clip.set_audio(audio_clip)

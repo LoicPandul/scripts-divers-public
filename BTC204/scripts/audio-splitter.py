@@ -37,15 +37,26 @@ def show_processing(stop_event):
 
 # Split audio
 def split_audio(chapter, lang, timecodes):
-    audio_path = os.path.join(current_directory, f"../chapters/{chapter}/audio/{lang}/{lang}.wav")
-    output_folder = os.path.join(current_directory, f"../chapters/{chapter}/audio/{lang}")
+    audio_path_wav = os.path.join(current_directory, f"../chapters/{chapter}/audio/{lang}/{lang}.wav")
+    audio_path_mp3 = os.path.join(current_directory, f"../chapters/{chapter}/audio/{lang}/{lang}.mp3")
 
-    audio = AudioSegment.from_wav(audio_path)
-    
+    if os.path.exists(audio_path_wav):
+        audio_path = audio_path_wav
+        output_format = "wav"
+    elif os.path.exists(audio_path_mp3):
+        audio_path = audio_path_mp3
+        output_format = "mp3"
+    else:
+        print(f"{Fore.RED}Error: No audio file found for language '{lang}' in chapter {chapter}.")
+        return
+
+    output_folder = os.path.join(current_directory, f"../chapters/{chapter}/audio/{lang}")
+    audio = AudioSegment.from_file(audio_path)
+
     for index, timecode in enumerate(timecodes):
         try:
             start_time = time_to_milliseconds(timecode['time'])
-            
+
             if index + 1 < len(timecodes):
                 next_time = timecodes[index + 1]['time']
                 end_time = time_to_milliseconds(next_time)
@@ -53,9 +64,9 @@ def split_audio(chapter, lang, timecodes):
                 end_time = len(audio)
 
             segment = audio[start_time:end_time]
-            segment.export(os.path.join(output_folder, f"{index + 1:02}.wav"), format="wav")
+            segment.export(os.path.join(output_folder, f"{index + 1:02}.{output_format}"), format=output_format)
 
-            print(f"{Style.DIM}- Segment {index + 1:02}.wav created from {timecode['time']} to {next_time if index + 1 < len(timecodes) else 'end of file'}")
+            print(f"{Style.DIM}- Segment {index + 1:02}.{output_format} created from {timecode['time']} to {next_time if index + 1 < len(timecodes) else 'end of file'}")
         except ValueError as e:
             print(f"{Fore.RED}Error processing segment {index + 1}: {e}")
 
@@ -73,7 +84,7 @@ if __name__ == "__main__":
         print(f"{Fore.RED}Error: YAML file for language '{lang}' not found in chapter {chapter}.")
     except yaml.YAMLError as e:
         print(f"{Fore.RED}Error reading YAML file: {e}")
-    
+
     # Start the processing animation
     stop_event = threading.Event()
     processing_thread = threading.Thread(target=show_processing, args=(stop_event,))
