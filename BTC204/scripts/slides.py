@@ -65,6 +65,15 @@ def load_fonts(settings, lang):
                 "jetbrains": ImageFont.truetype(os.path.join(fonts_path, "JetBrainsMono-Italic.ttf"), 24),
                 "italic": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Italic.ttf"), 20),
             }
+        elif lang == 'zh-hans':
+            return {
+                "bold": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansSC-Bold.ttf"), 96),
+                "bold2": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansSC-Bold.ttf"), 60),
+                "regular": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansSC-Regular.ttf"), 48),
+                "medium": ImageFont.truetype(os.path.join(alt_fonts_path, "NotoSansSC-Medium.ttf"), 55),
+                "jetbrains": ImageFont.truetype(os.path.join(fonts_path, "JetBrainsMono-Italic.ttf"), 24),
+                "italic": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Italic.ttf"), 20),
+            }
         else:
             return {
                 "bold": ImageFont.truetype(os.path.join(fonts_path, "Rubik-Bold.ttf"), 96),
