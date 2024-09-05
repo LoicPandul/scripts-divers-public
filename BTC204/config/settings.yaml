@@ -34,3 +34,6 @@ default_languages:
   - pt
   - ru
   - vi
+  - id
+  - et
+  - zh-hans
