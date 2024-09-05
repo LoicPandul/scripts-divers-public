@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 from colorama import init, Fore, Style
 import yaml
+import re
 
 init(autoreset=True)
 
@@ -298,18 +299,24 @@ if __name__ == "__main__":
         timecode_index = 1
 
         if os.path.exists(lang_path):
-            for image_name in sorted(os.listdir(lang_path)):
-                if image_name.endswith(".webp"):
-                    create_main_slide(output_folder, os.path.join(lang_path, image_name), slide_number, yaml_data, timecode_index, fonts, settings, lang_settings)
-                    slide_number += 1
-                    timecode_index += 1
+            lang_images = [(img, os.path.join(lang_path, img)) for img in os.listdir(lang_path) if img.endswith(".webp")]
+        else:
+            lang_images = []
 
         if os.path.exists(notext_path):
-            for image_name in sorted(os.listdir(notext_path)):
-                if image_name.endswith(".webp"):
-                    create_main_slide(output_folder, os.path.join(notext_path, image_name), slide_number, yaml_data, timecode_index, fonts, settings, lang_settings)
-                    slide_number += 1
-                    timecode_index += 1
+            notext_images = [(img, os.path.join(notext_path, img)) for img in os.listdir(notext_path) if img.endswith(".webp")]
+        else:
+            notext_images = []
+
+        all_images = lang_images + notext_images
+
+        all_images.sort(key=lambda x: int(re.search(r'\d+', x[0]).group()))
+
+        for image_name, image_path in all_images:
+            create_main_slide(output_folder, image_path, slide_number, yaml_data, timecode_index, fonts, settings, lang_settings)
+            slide_number += 1
+            timecode_index += 1
+
 
         print(f"{Style.BRIGHT}{Fore.CYAN}Slides created for language: {lang}")
 
