@@ -1,0 +1,19 @@
+chpt: 2.2
+nm: La estructura de las transacciones
+timecodes: 
+  - time: "00:00"
+    titre: "La estructura de las transacciones"
+  - time: "00:44"
+    titre: "Entradas y salidas"
+  - time: "01:18"
+    titre: "Entradas y salidas"
+  - time: "01:38"
+    titre: "Entradas y salidas"
+  - time: "03:39"
+    titre: "El cambio de transacción"
+  - time: "05:48"
+    titre: "La fusión de entradas"
+  - time: "06:41"
+    titre: "Las tarifas de transacción"
+  - time: "09:23"
+    titre: "La transacción coinbase"
