@@ -1,0 +1,15 @@
+chpt: 1.1
+nm: Johdatus BTC204-koulutukseen
+timecodes: 
+  - time: "00:00"
+    titre: "Johdatus BTC204-koulutukseen"
+  - time: "03:34"
+    titre: "Osa 1: Määritelmät ja keskeiset käsitteet"
+  - time: "04:25"
+    titre: "Osa 2: Ketjuanalyysin ymmärtäminen"
+  - time: "04:58"
+    titre: "Osa 3: Parhaiden käytäntöjen hallitseminen"
+  - time: "05:46"
+    titre: "Osa 4: Coinjoin-tapahtumien ymmärtäminen"
+  - time: "06:54"
+    titre: "Osa 5: Muut tietosuojatekniikat"
