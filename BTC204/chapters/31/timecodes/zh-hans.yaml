@@ -1,0 +1,17 @@
+chpt: 3.1
+nm: 什么是链分析？
+timecodes: 
+  - time: "00:00"
+    titre: "什么是链分析？"
+  - time: "01:02"
+    titre: "定义及工作原理"
+  - time: "03:11"
+    titre: "链分析的目标"
+  - time: "03:26"
+    titre: "活动分组"
+  - time: "04:08"
+    titre: "入口点"
+  - time: "05:48"
+    titre: "防御链分析"
+  - time: "08:23"
+    titre: "中本聪与链分析"
