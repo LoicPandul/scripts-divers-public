@@ -1,0 +1,23 @@
+chpt: 
+nm: 
+timecodes: 
+  - time: "00:00"
+    titre: ""
+  - time: "01:10"
+    titre: "Rappel coinjoin"
+  - time: "01:52"
+    titre: "Inversement"
+  - time: "02:57"
+    titre: "L'anonset prospectif"
+  - time: "04:39"
+    titre: "Par exemple, si"
+  - time: "04:53"
+    titre: "Par exemple, imaginons que notre pièce"
+  - time: "05:22"
+    titre: "rétrospéctif"
+  - time: "05:57"
+    titre: "En connaissant votre UTXO à la sortie des cycles"
+  - time: "06:11"
+    titre: "Par exemple, imaginons que notre pièce"
+  - time: "06:39"
+    titre: "comment calculer ?"
