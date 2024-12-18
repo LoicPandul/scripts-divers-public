@@ -3,6 +3,10 @@ nm: Introduction de la formation BTC204
 timecodes: 
   - time: "00:00"
     titre: "Introduction de la formation BTC204"
+  - time: "00:12"
+    titre: "Intro texte"
+  - time: "02:54"
+    titre: "Intro objectifs"   
   - time: "03:34"
     titre: "Section 1 : Définitions et concepts clés"
   - time: "04:25"
