@@ -80,63 +80,120 @@ https://en.bitcoin.it/wiki/Wladimir_van_der_Laan
 
 **Facile :**
 
+Comment s'appelle l'information permettant de regénérer toutes les clés d'un portefeuille Bitcoin HD ?
 
+- La phrase mnémonique
 
+- La clé maîtresse
+- La xpub
+- L'adresse de réception
 
 
 **Moyen :**
 
+Quel chemin de dérivation correspond à celui d'un compte SegWit v0 (P2WPKH) sur le mainnet ?
 
+- m/84'/0'/0'/
 
+- m/86'/0'/0'/
+- m/84'/1'/0'/
+- m/86'/1'/0'/
+
+https://planb.network/courses/cyp201/34e1bbda-67de-5493-b268-1fded8d67689
 
 
 **Difficile :**
 
+Quel SigHash Flag indique que la signature d’un input couvre l’intégralité de la transaction, c'est-à-dire tous les inputs et tous les outputs ?
 
+- SIGHASH_ALL
+
+- SIGHASH_NONE
+- SIGHASH_SINGLE
+- SIGHASH_ANYONECANPAY
+
+https://planb.network/courses/cyp201/231c41a2-aff2-4655-9048-47b6d2d83d64
 
 
 **Expert :**
 
+Combien de tours contient chaque fonction de compression dans la fonction de hachage SHA256 utilisée sur Bitcoin ?
+
+- 64
+
+- 2
+- 32
+- 10
+
+https://planb.network/courses/cyp201/905eb320-f15b-5fb6-8d2d-5bb447337deb
 
 
 ## Protocole
 
 **Facile :**
 
+Quel est le nom de la première transaction dans chaque bloc, qui sert à distribuer la récompense de bloc au mineur ayant trouvé une preuve de travail valide ?
 
+- Coinbase Transaction
 
+- Genesis Transaction
+- Reward Transaction
+- Mining Transaction
 
 
 **Moyen :**
 
+Tous les combien de blocs se produit un halving sur Bitcoin ?
 
+- 210 000
 
+- 2 016
+- 100 000
+- 3 200
 
 
 **Difficile :**
 
+Dans quel ordre un nœud Bitcoin sollicite-t-il les mécanismes de découverte de pairs lors de son lancement ?
 
+- peers.dat > DNS seeds > seed nodes
+
+- DNS seeds > seed nodes > peers.dat
+- seed nodes > DNS seeds > peers.dat
+- DNS seeds > peers.dat > seed nodes
+
+https://bitcoin.stackexchange.com/questions/3536/how-do-bitcoin-clients-find-each-other?noredirect=1&lq=1
 
 
 **Expert :**
 
+À quelle date l’horodatage des blocs Bitcoin atteindra-t-il sa valeur maximale ?
+
+- 7 février 2106
+
+- 4 août 2140
+- 19 janvier 2038
+- 4 décembre 292 277 026 596
+
+https://bitcoin.stackexchange.com/questions/106783/will-a-hard-fork-be-required-to-change-timestamp-fields
 
 
 ## Scalling
 
 **Facile :**
 
+Qu’est-ce qu’une sidechain de Bitcoin ?
 
+- Une blockchain secondaire liée à la blockchain principale de Bitcoin grâce à un ancrage bilatéral.
 
+- Une blockchain de test qui reproduit exactement le comportement de la blockchain principale de Bitcoin.
+- Un réseau de canaux bidirectionnels pour effectuer des paiements en bitcoins off-chain.
+- Une blockchain similaire à la blockchain principale de Bitcoin, conçue pour la remplacer en cas de bug.
+
+https://blockstream.com/sidechains.pdf
 
 
 **Moyen :**
-
-
-
-
-
-**Difficile :**
 
 Qui sont les deux inventeurs du Lightning Network ?
 
@@ -148,6 +205,18 @@ Qui sont les deux inventeurs du Lightning Network ?
 
 https://lightning.network/lightning-network-paper.pdf
 
+
+**Difficile :**
+
+Comment appelle-t-on le standard définissant les spécifications techniques du Lightning Network ?
+
+- BOLT
+
+- LNURL
+- HTLC
+- LND
+
+https://www.voltage.cloud/blog/what-are-bolts-lightning-network
 
 
 **Expert :**
