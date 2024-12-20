@@ -58,22 +58,48 @@ https://en.bitcoin.it/wiki/Wladimir_van_der_Laan
 
 **Facile :**
 
+Quel pourcentage de l’offre totale de bitcoins est déjà miné en 2025 ?
 
+- Environ 94 %
 
+- Environ 10 %
+- 100 %
+- Environ 27 %
 
 
 **Moyen :**
 
+Combien de bitcoins sont émis à chaque bloc via la subvention depuis le halving de 2024 ?
 
+- 3,125
 
+- 50
+- 25
+- 6,25
 
 
 **Difficile :**
 
+À quelle date le bitcoin a-t-il atteint pour la première fois la parité avec le dollar américain ?
 
+- 10 février 2011
+
+- 3 janvier 2009
+- 23 avril 2011
+- 01 avril 2013
+
+https://news.slashdot.org/story/11/02/10/189246/online-only-currency-bitcoin-reaches-dollar-parity
 
 
 **Expert :**
+
+Comment appelle-t-on le phénomène qui caractérise la fréquence variable d'obtention d'une récompense de bloc, et que les pools de minage permettent de réduire ?
+
+- La variance
+
+- L’entropie
+- La difficulté
+- L’écart-type
 
 
 ## Wallet / Cryptographie
