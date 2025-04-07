@@ -68,7 +68,7 @@
 
 - 4.3 - Configurer son navigateur :
 	- télémétrie, cookies, https, protection renforcée, pubs, accès au périphériques, notif push...
-	- + les extensions intéressantes
+	- les extensions intéressantes?
 
 - 4.4 - Les bonnes pratiques : 
 	- gestion des onglets, gestion des favoris, màj, "nettoyer", gestion extensions, navigation privée (explication), cloisonnement des usages.
@@ -111,7 +111,7 @@
 	- Màj firmware ;
 	- Contrôle et surveillance des appareils connectés (outils, logiciels + tuto?) ;
 	- Réseau invité isolé ;
-	- + pratiques avancées (installation routeur libre, cloisonner en vlan, installer un VPN niveau routeur?) - à voir, pas sûr que ce soit utile et applicable mondialement.
+	- pratiques avancées (installation routeur libre, cloisonner en vlan, installer un VPN niveau routeur?) - à voir, pas sûr que ce soit utile et applicable mondialement.
 
 
 **7 - Partie finale** 
