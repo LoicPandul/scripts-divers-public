@@ -20,7 +20,7 @@ Analyse des contextes à haut risque : régimes autoritaires, zones de conflit, 
 Cloisonnement total, gestion de la surface d’exposition, redondance des protocoles, compartimentations logiques et humaines.
 
 
-**Chapitre 4 - Nouvelles menaces : IA générative & deepfakes**
+**Chapitre 4 - Nouvelles menaces : IA générative et deepfakes**
 
 Campagnes de désinformation avec synthèse vocale/vidéo pour cibler les war correspondents, opposants politiques... Détection de contenus falsifiés, contremesures, protocole de validation croisée.
 
