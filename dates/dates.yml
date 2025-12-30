@@ -65,8 +65,11 @@ events:
   - date: 2009-12-30
     title: La difficulte de minage augmente pour la premiere fois (bloc 32 256)
 
+  - date: 2010-03-17
+    title: Ouverture de Bitcoin Market, première plateforme d'échange de bitcoins
+
   - date: 2010-05-22
-    title: Bitcoin Pizza Day - 2 pizzas achetees pour 10 000 BTC
+    title: Bitcoin Pizza Day - 2 pizzas achetées pour 10 000 BTC
 
   - date: 2010-06-11
     title: Lancement du premier "Bitcoin faucet" distribuant 5 BTC gratuitement a chacun
