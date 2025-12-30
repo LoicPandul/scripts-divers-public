@@ -1,0 +1,438 @@
+version: 1
+last_modification: 2025-12-30
+author: Loic
+events:
+  - date: 1992-11-22
+    title: Publication du "Crypto Anarchist Manifesto" de Timothy C. May
+
+  - date: 1993-03-09
+    title: Publication du "Cypherpunk Manifesto" d'Eric Hughes
+
+  - date: 1994-05-27
+    title: Premier paiement electronique en eCash de DigiCash (David Chaum)
+
+  - date: 1997-03-28
+    title: Annonce de Hashcash par Adam Back (systeme de preuve de travail anti-spam)
+
+  - date: 1998-11-26
+    title: Wei Dai propose le concept de b-money (monnaie numerique decentralisee)
+
+  - date: 2002-09-20
+    title: Premiere version alpha du reseau Tor (communication anonyme)
+
+  - date: 2003-09-15
+    title: Lancement du site de partage P2P The Pirate Bay
+
+  - date: 2004-08-15
+    title: Hal Finney lance RPOW (Reusable Proofs of Work, precurseur direct de Bitcoin)
+
+  - date: 2005-12-29
+    title: Nick Szabo decrit le projet Bit Gold (concept de monnaie numerique rare)
+
+  - date: 2008-08-18
+    title: Enregistrement du domaine bitcoin.org par Satoshi
+
+  - date: 2008-10-31
+    title: Publication du White Paper de Bitcoin par Satoshi Nakamoto
+
+  - date: 2008-11-09
+    title: Inscription du projet Bitcoin sur SourceForge (début du developpement public)
+
+  - date: 2009-01-03
+    title: Genese de Bitcoin - minage du bloc Genesis (bloc 0)
+
+  - date: 2009-01-09
+    title: Sortie du logiciel Bitcoin v0.1
+
+  - date: 2009-01-11
+    title: Hal Finney annonce "Running bitcoin" sur Twitter (premier tweet à propos de Bitcoin)
+
+  - date: 2009-01-12
+    title: Premiere transaction Bitcoin (10 BTC de Satoshi vers Hal Finney, bloc 170)
+
+  - date: 2009-10-05
+    title: Premier taux de change publie - 1 USD ≈ 1 309 BTC (New Liberty Standard)
+
+  - date: 2009-10-12
+    title: Premiere vente connue de BTC contre des dollars (5 050 BTC pour 5,02 USD par Martti Malmi)
+
+  - date: 2009-11-22
+    title: Satoshi Nakamoto fonde le forum Bitcointalk.org (premiere communaute Bitcoin en ligne)
+
+  - date: 2009-12-16
+    title: Publication de Bitcoin v0.2
+
+  - date: 2009-12-30
+    title: La difficulte de minage augmente pour la premiere fois (bloc 32 256)
+
+  - date: 2010-05-22
+    title: Bitcoin Pizza Day - 2 pizzas achetees pour 10 000 BTC
+
+  - date: 2010-06-11
+    title: Lancement du premier "Bitcoin faucet" distribuant 5 BTC gratuitement a chacun
+
+  - date: 2010-07-18
+    title: Lancement de la plateforme d'echange Mt. Gox
+
+  - date: 2010-07-25
+    title: Un utilisateur (KnightMB) revele posseder 371 000 BTC (~10 % des BTC en circulation)
+
+  - date: 2010-08-09
+    title: Perte accidentelle de 8 999 BTC par un utilisateur (erreur d'adresse de rendu)
+
+  - date: 2010-08-10
+    title: Envoi de BTC vers une adresse invalide (premiere destruction volontaire de bitcoins)
+
+  - date: 2010-08-15
+    title: Bug d'inflation - 184 milliards de BTC crees par erreur (rollback du bloc 74 638)
+
+  - date: 2010-11-01
+    title: Adoption du logo Bitcoin ₿ par la communaute
+
+  - date: 2010-11-08
+    title: Premiere utilisation du terme "shitcoin" pour qualifier une altcoin sans valeur
+
+  - date: 2010-11-27
+    title: Creation du premier pool de minage Bitcoin (Slush Pool)
+
+  - date: 2010-12-07
+    title: Premiere transaction Bitcoin effectuee via un telephone portable (application Android)
+
+  - date: 2011-01-27
+    title: Lancement du marche anonyme Silk Road (Bitcoin utilise sur le dark web)
+
+  - date: 2011-02-09
+    title: 1 BTC = 1 USD pour la premiere fois (parite avec le dollar US)
+
+  - date: 2011-02-15
+    title: Premiere vente d'une voiture en bitcoins (3 000 BTC pour un vehicule d'occasion)
+
+  - date: 2011-03-18
+    title: Condamnation du createur du Liberty Dollar (monnaie privee) - avertissement pour les monnaies alternatives
+
+  - date: 2011-04-23
+    title: Dernier message de Satoshi Nakamoto "Bitcoin est entre de bonnes mains" (puis il disparait)
+
+  - date: 2011-05-16
+    title: Tweet celebre de Greg Schoen regrettant d'avoir vendu 1 700 BTC a 0,30 $ (au lieu d'attendre 8 $)
+
+  - date: 2011-06-13
+    title: Premier vol majeur - 25 000 BTC derobes sur l'ordinateur d'un utilisateur (cas "allinvain")
+
+  - date: 2011-06-14
+    title: WikiLeaks annonce accepter les dons en Bitcoin suite au blocus bancaire
+
+  - date: 2011-06-18
+    title: Presentation du concept de portefeuilles deterministes (BIP32) sur Bitcointalk
+
+  - date: 2011-06-19
+    title: Piratage de Mt. Gox - le prix s'effondre a 0,01 $ (flash crash, 259k BTC achetes a vil prix)
+
+  - date: 2011-06-21
+    title: Creation de l'adresse "1BitcoinEater..." pour detruire volontairement des BTC (preuve par l'absurde)
+
+  - date: 2011-06-23
+    title: Mt. Gox transfere 442 000 BTC en une transaction pour prouver sa solvabilite
+
+  - date: 2011-07-15
+    title: Un utilisateur annonce vendre tous ses BTC a 14 $ (tweet "ragequit" devenu celebre a posteriori)
+
+  - date: 2011-07-26
+    title: L'exchange polonais Bitomat perd 17 000 BTC faute de sauvegarde (portefeuille supprime)
+
+  - date: 2011-09-06
+    title: Mise en vente des premieres pieces Bitcoin physiques Casascius (1 BTC materialise sous forme de piece)
+
+  - date: 2011-11-16
+    title: Plus grande transaction Bitcoin a ce jour, ~550 000 BTC transferes (mouvements internes Mt. Gox)
+
+  - date: 2011-11-23
+    title: Magazine Wired publie "The Rise and Fall of Bitcoin" retracant la bulle et le krach de 2011
+
+  - date: 2011-12-12
+    title: Record de frais de transaction - 171 BTC payes par erreur pour une seule transaction (bloc 157 235)
+
+  - date: 2012-03-01
+    title: Piratage du service Linode, ~46 000 BTC voles (plateformes et portefeuilles compromis)
+
+  - date: 2012-04-24
+    title: Lancement du site de pari SatoshiDICE (micro-paris en bitcoins, succes et controverse)
+
+  - date: 2012-05-01
+    title: Parution du premier numero du magazine "Bitcoin Magazine" (Vitalik Buterin co-fondateur)
+
+  - date: 2012-06-01
+    title: Fondation de Coinbase (plateforme grand public pour acheter des bitcoins)
+
+  - date: 2012-08-17
+    title: Effondrement du schema Ponzi "Bitcoin Savings & Trust" (environ 100k BTC perdus par l'operateur Pirateat40)
+
+  - date: 2012-09-27
+    title: Creation de la Bitcoin Foundation pour soutenir le developpement et la promotion de Bitcoin
+
+  - date: 2012-11-28
+    title: Premier halving de Bitcoin - la recompense miniere passe de 50 a 25 BTC par bloc
+
+  - date: 2013-01-30
+    title: Livraison des premiers mineurs ASIC dedies Bitcoin (Avalon, ~68 GH/s)
+
+  - date: 2013-03-12
+    title: Incident de fork - rollback coordonne de 24 blocs apres une incompatibilite entre versions 0.7 et 0.8
+
+  - date: 2013-03-18
+    title: Le FinCEN publie la premiere regulation US sur Bitcoin (exchanges consideres comme services monetaires)
+
+  - date: 2013-03-28
+    title: La capitalisation de Bitcoin depasse 1 milliard de dollars
+
+  - date: 2013-04-01
+    title: 1 BTC s'echange a 100 USD pour la premiere fois
+
+  - date: 2013-04-09
+    title: Bitcoin depasse 200 USD
+
+  - date: 2013-05-18
+    title: Premiere grande conference Bitcoin aux Etats-Unis (San Jose, Californie)
+
+  - date: 2013-08-06
+    title: Un juge federal US reconnait le Bitcoin comme une forme d'argent (affaire SEC vs Shavers)
+
+  - date: 2013-08-19
+    title: L'Allemagne reconnait Bitcoin comme "unite de compte" (monnaie privee legale pour les echanges)
+
+  - date: 2013-08-22
+    title: Gregory Maxwell propose la methode CoinJoin pour anonymiser les transactions Bitcoin
+
+  - date: 2013-10-01
+    title: Fermeture de Silk Road par le FBI - arrestation de Ross Ulbricht (debut du mouvement "Free Ross")
+
+  - date: 2013-10-29
+    title: Installation du premier distributeur de bitcoins (ATM) a Vancouver, Canada
+
+  - date: 2013-11-18
+    title: Audition au Senat americain sur Bitcoin - les regulateurs adoptent un ton generalement positif
+
+  - date: 2013-11-28
+    title: Le prix du Bitcoin depasse 1 000 $ pour la premiere fois
+
+  - date: 2013-12-18
+    title: Naissance du meme "HODL" sur Bitcointalk ("I AM HODLING")
+
+  - date: 2014-01-09
+    title: Overstock.com devient la premiere grande entreprise a accepter le Bitcoin en paiement
+
+  - date: 2014-02-07
+    title: Mt. Gox gele les retraits - rappel du principe "Not your keys, not your coins"
+
+  - date: 2014-02-24
+    title: Effondrement de Mt. Gox - la plateforme depose le bilan (744 000 BTC perdus)
+
+  - date: 2014-03-06
+    title: Newsweek pretend identifier Satoshi (Dorian Nakamoto) - celui-ci dement toute implication
+
+  - date: 2014-07-01
+    title: Vente aux encheres de 29 656 BTC saisis du Silk Road (remportee par l'investisseur Tim Draper)
+
+  - date: 2014-07-17
+    title: New York propose le BitLicense - premier cadre reglementaire pour les entreprises Bitcoin
+
+  - date: 2014-07-29
+    title: Sortie du Trezor One, premier portefeuille materiel pour bitcoins
+
+  - date: 2014-08-28
+    title: Deces de Hal Finney (premier utilisateur Bitcoin, recipiendaire de la 1ere transaction)
+
+  - date: 2014-10-08
+    title: Andreas M. Antonopoulos temoigne devant le Senat canadien pour expliquer Bitcoin
+
+  - date: 2014-12-11
+    title: Microsoft commence a accepter les paiements en bitcoins (Xbox Live, Windows Store)
+
+  - date: 2014-12-20
+    title: Publication du livre "Mastering Bitcoin" d'Andreas Antonopoulos
+
+  - date: 2015-01-04
+    title: Piratage de l'exchange Bitstamp - ~19 000 BTC voles (l'exchange survit et rembourse)
+
+  - date: 2015-01-26
+    title: Coinbase lance le premier exchange Bitcoin regule aux Etats-Unis
+
+  - date: 2015-06-24
+    title: Entree en vigueur du BitLicense a New York (certaines entreprises Bitcoin quittent l'Etat)
+
+  - date: 2015-08-15
+    title: Debut de la "guerre des blocs" - lancement du client alternatif Bitcoin XT (blocs 8 Mo proposes)
+
+  - date: 2015-10-22
+    title: La Cour de justice de l'UE exonere les echanges de bitcoins de TVA (Bitcoin traite comme une devise)
+
+  - date: 2015-12-08
+    title: Wired et Gizmodo pretendent que Craig Wright est Satoshi (preuves rapidement contestees)
+
+  - date: 2015-12-29
+    title: Publication de l'essai "Bitcoin is being hot-wired for settlement" par Jeff Garzik (debat sur l'evolutivite)
+
+  - date: 2016-01-14
+    title: Publication du white paper du Lightning Network (Poon & Dryja, transactions off-chain)
+
+  - date: 2016-01-14
+    title: Le developpeur Mike Hearn quitte le projet en declarant que "Bitcoin a echoue" (controverse)
+
+  - date: 2016-05-02
+    title: Craig S. Wright tente de prouver qu'il est Satoshi (revendication publique vite mise en doute)
+
+  - date: 2016-07-09
+    title: Deuxieme halving Bitcoin - recompense miniere reduite a 12,5 BTC
+
+  - date: 2016-08-02
+    title: Hack de Bitfinex - 119 756 BTC derobes (l'un des plus gros vols d'exchange)
+
+  - date: 2017-03-03
+    title: 1 BTC depasse la valeur d'une once d'or (~1 250 USD)
+
+  - date: 2017-04-01
+    title: Le Japon reconnait legalement le Bitcoin comme moyen de paiement
+
+  - date: 2017-07-12
+    title: Buy Bitcoin - un sympathisant brandit un panneau pro-Bitcoin derriere Janet Yellen (buzz mediatique)
+
+  - date: 2017-08-01
+    title: Hard fork Bitcoin - création de Bitcoin Cash (premiere scission de la blockchain BTC)
+
+  - date: 2017-08-01
+    title: UASF Day - les utilisateurs forcent l'activation de SegWit (victoire de la communaute)
+
+  - date: 2017-08-08
+    title: Segregated Witness (SegWit) atteint le seuil d'activation sur le reseau Bitcoin
+
+  - date: 2017-08-15
+    title: Blockstream deploie le service Bitcoin Satellite (noeuds synchronises par satellite)
+
+  - date: 2017-08-21
+    title: Celebration communautaire du "Bitcoin Infinity Day" (21/8 pour 21 millions BTC & 8 decimales)
+
+  - date: 2017-08-24
+    title: Activation de SegWit sur le reseau Bitcoin (amelioration de capacite et correction de la malleabilite)
+
+  - date: 2017-11-01
+    title: Le symbole Bitcoin (₿) est ajoute au standard Unicode (version 10.0)
+
+  - date: 2017-12-10
+    title: Lancement des premiers contrats a terme Bitcoin aux USA (CBOE le 10, CME le 18 decembre)
+
+  - date: 2017-12-17
+    title: Prix du Bitcoin a ~20 000 $ (pic historique de la bulle de 2017)
+
+  - date: 2018-03-15
+    title: Version beta publique du Lightning Network (LND) lancee sur le mainnet Bitcoin
+
+  - date: 2018-04-24
+    title: Publication du livre "The Bitcoin Standard" (Saifedean Ammous)
+
+  - date: 2018-05-10
+    title: Lightning Day - la communaute fete les progres du Lightning Network
+
+  - date: 2019-01-03
+    title: 10e anniversaire de Bitcoin - encart "Thanks Satoshi, we owe you one" dans le Times (BitMEX)
+
+  - date: 2019-01-07
+    title: Oeuvre de street art a Paris - fresque Bitcoin avec un puzzle de 0,28 BTC (trouve en quelques jours)
+
+  - date: 2019-01-19
+    title: Experience Lightning Torch - un "flambeau" LN relaye a travers 56 pays
+
+  - date: 2019-03-22
+    title: Publication du modele stock-to-flow (PlanB) reliant rarete et valorisation du Bitcoin
+
+  - date: 2019-05-07
+    title: Hack de Binance - ~7 000 BTC derobes (rembourses par la plateforme)
+
+  - date: 2019-07-12
+    title: Le president Donald Trump tweete qu'il "n'est pas fan du Bitcoin" (premiere mention par un president en exercice)
+
+  - date: 2019-08-08
+    title: Blockstream lance son mining pool utilisant le protocole decentralise BetterHash
+
+  - date: 2019-08-28
+    title: SatoshiLabs introduit la sauvegarde Shamir (decoupage de seed en plusieurs parts) dans les Trezor
+
+  - date: 2019-09-23
+    title: Lancement de Bakkt - premieres futures Bitcoin avec reglement en BTC physique
+
+  - date: 2020-03-12
+    title: Jeudi Noir - le Bitcoin perd ~50 % en 24h (panique COVID, liquidation massive de positions)
+
+  - date: 2020-05-11
+    title: Troisieme halving Bitcoin - la recompense miniere passe a 6,25 BTC
+
+  - date: 2020-05-24
+    title: Des portefeuilles de 2009 signent un message traitant Craig Wright d'imposteur (preuve qu'il n'est pas Satoshi)
+
+  - date: 2020-08-11
+    title: MicroStrategy devient la premiere societe cotee a investir sa tresorerie en Bitcoin (250 M$ pour 21 454 BTC)
+
+  - date: 2020-10-21
+    title: PayPal annonce l'integration du Bitcoin pour ses 350 millions d'utilisateurs
+
+  - date: 2020-12-16
+    title: Le prix du Bitcoin depasse son record historique de 2017 (~20 000 $) et entame un nouveau rallye
+
+  - date: 2021-02-08
+    title: Tesla annonce un achat de 1,5 milliard $ de BTC et l'acceptation prochaine du Bitcoin comme paiement
+
+  - date: 2021-02-19
+    title: La capitalisation de Bitcoin depasse 1 000 milliards de dollars
+
+  - date: 2021-03-25
+    title: Meme "Moscow Time" - l'horloge de Jack Dorsey affichant les sats/$ fait le buzz en ligne
+
+  - date: 2021-04-14
+    title: Introduction en bourse de Coinbase (NASDAQ COIN), valorisation de ~85 milliards $
+
+  - date: 2021-05-14
+    title: La Chine interdit le minage de Bitcoin - 50 % du hashrate offline, migration massive des mineurs a l'etranger
+
+  - date: 2021-06-12
+    title: Seuil d'activation de Taproot atteint par les mineurs (mise a jour programmee pour novembre 2021)
+
+  - date: 2021-09-07
+    title: Le Salvador adopte officiellement le Bitcoin comme monnaie legale (une premiere mondiale)
+
+  - date: 2021-09-14
+    title: Sortie de Bitcoin Core v22.0 (premiere version majeure sans numero de version "0.")
+
+  - date: 2021-10-19
+    title: Lancement du premier ETF Bitcoin aux USA (ProShares BITO, base sur des futures BTC)
+
+  - date: 2021-11-14
+    title: Activation de la mise a jour Taproot sur le reseau Bitcoin (amelioration de la confidentialite et des smart contracts)
+
+  - date: 2022-02-26
+    title: Le gouvernement ukrainien appelle aux dons en crypto (≥60 M$ en BTC/crypto recus apres l'invasion russe)
+
+  - date: 2022-03-09
+    title: Le president Biden signe un decret federal initiant une strategie US sur les crypto-actifs
+
+  - date: 2022-04-27
+    title: La Republique centrafricaine adopte a son tour le Bitcoin comme monnaie legale (2e pays au monde)
+
+  - date: 2022-10-05
+    title: Le hashrate du reseau Bitcoin atteint un record absolu (~240 EH/s, post-China ban)
+
+  - date: 2022-11-08
+    title: Chute de FTX - l'une des plus grosses plateformes s'effondre (≈ 8 Mds$ de trous, renforce le mantra "Not your keys...")
+
+  - date: 2023-01-21
+    title: Lancement du protocole Ordinals - inscriptions de NFT sur la blockchain Bitcoin (debat sur l'usage du bloc)
+
+  - date: 2023-04-05
+    title: Decouverte d'un easter egg - le white paper Bitcoin est cache dans chaque installation macOS
+
+  - date: 2023-06-15
+    title: BlackRock (n°1 mondial de la gestion d'actifs) depose une demande d'ETF Bitcoin spot aux Etats-Unis
+
+  - date: 2023-08-29
+    title: Victoire de Grayscale en justice - la cour oblige la SEC a reexaminer le refus de son ETF Bitcoin
+
+  - date: 2023-12-01
+    title: Le nouveau pool de minage "OCEAN" mine son premier bloc Bitcoin (bloc 819 242)
