@@ -3,289 +3,512 @@ last_modification: 2025-12-30
 author: Loic
 events:
   - date: 1992-11-22
-    title: Publication du "Crypto Anarchist Manifesto" de Timothy C. May
+    title_fr: Publication du "Crypto Anarchist Manifesto" de Timothy C. May
+    title_en: Publication of the "Crypto Anarchist Manifesto" by Timothy C. May
+    title_es: Publicación del "Crypto Anarchist Manifesto" de Timothy C. May
+    title_it: Pubblicazione del "Crypto Anarchist Manifesto" di Timothy C. May
     slug: crypto-anarchist-manifesto
 
   - date: 1993-03-09
-    title: Publication du "Cypherpunk Manifesto" d'Eric Hughes
+    title_fr: Publication du "Cypherpunk Manifesto" d'Eric Hughes
+    title_en: Publication of the "Cypherpunk Manifesto" by Eric Hughes
+    title_es: Publicación del "Cypherpunk Manifesto" de Eric Hughes
+    title_it: Pubblicazione del "Cypherpunk Manifesto" di Eric Hughes
     slug: cypherpunk-manifesto
 
   - date: 1994-05-27
-    title: Premier paiement électronique en eCash de DigiCash (David Chaum)
+    title_fr: Premier paiement électronique en eCash de DigiCash (David Chaum)
+    title_en: First electronic eCash payment by DigiCash (David Chaum)
+    title_es: Primer pago electrónico en eCash de DigiCash (David Chaum)
+    title_it: Primo pagamento elettronico in eCash di DigiCash (David Chaum)
     slug: digicash-ecash-payment
 
   - date: 1997-03-28
-    title: Annonce de Hashcash par Adam Back (système de preuve de travail anti-spam)
+    title_fr: Annonce de Hashcash par Adam Back (système de preuve de travail anti-spam)
+    title_en: Hashcash announced by Adam Back (anti-spam proof-of-work system)
+    title_es: Anuncio de Hashcash por Adam Back (sistema de prueba de trabajo anti-spam)
+    title_it: Annuncio di Hashcash da parte di Adam Back (sistema di proof-of-work anti-spam)
     slug: hashcash-announced
 
   - date: 1998-11-26
-    title: Wei Dai propose le concept de b-money (monnaie numérique décentralisée)
+    title_fr: Wei Dai propose le concept de b-money (monnaie numérique décentralisée)
+    title_en: Wei Dai proposes the concept of b-money (decentralized digital currency)
+    title_es: Wei Dai propone el concepto de b-money (moneda digital descentralizada)
+    title_it: Wei Dai propone il concetto di b-money (valuta digitale decentralizzata)
     slug: b-money-proposed
 
   - date: 2002-09-20
-    title: Première version alpha du réseau Tor (communication anonyme)
+    title_fr: Première version alpha du réseau Tor (communication anonyme)
+    title_en: First alpha release of the Tor network (anonymous communication)
+    title_es: Primera versión alfa de la red Tor (comunicación anónima)
+    title_it: Prima versione alpha della rete Tor (comunicazione anonima)
     slug: tor-alpha-release
 
   - date: 2003-09-15
-    title: Lancement du site de partage P2P The Pirate Bay
+    title_fr: Lancement du site de partage P2P The Pirate Bay
+    title_en: Launch of the P2P file-sharing site The Pirate Bay
+    title_es: Lanzamiento del sitio de intercambio P2P The Pirate Bay
+    title_it: Lancio del sito di condivisione P2P The Pirate Bay
     slug: pirate-bay-launched
 
   - date: 2004-08-15
-    title: Hal Finney lance RPOW (Reusable Proofs of Work, précurseur direct de Bitcoin)
+    title_fr: Hal Finney lance RPOW (Reusable Proofs of Work, précurseur direct de Bitcoin)
+    title_en: Hal Finney launches RPOW (Reusable Proofs of Work, direct precursor to Bitcoin)
+    title_es: Hal Finney lanza RPOW (Reusable Proofs of Work, precursor directo de Bitcoin)
+    title_it: Hal Finney lancia RPOW (Reusable Proofs of Work, precursore diretto di Bitcoin)
     slug: rpow-launched
 
   - date: 2005-12-29
-    title: Nick Szabo décrit le projet Bit Gold (concept de monnaie numérique rare)
+    title_fr: Nick Szabo décrit le projet Bit Gold (concept de monnaie numérique rare)
+    title_en: Nick Szabo describes the Bit Gold project (scarce digital currency concept)
+    title_es: Nick Szabo describe el proyecto Bit Gold (concepto de moneda digital escasa)
+    title_it: Nick Szabo descrive il progetto Bit Gold (concetto di valuta digitale scarsa)
     slug: bit-gold-described
 
   - date: 2008-08-18
-    title: Enregistrement du domaine bitcoin.org par Satoshi
+    title_fr: Enregistrement du domaine bitcoin.org par Satoshi
+    title_en: Registration of the bitcoin.org domain by Satoshi
+    title_es: Registro del dominio bitcoin.org por Satoshi
+    title_it: Registrazione del dominio bitcoin.org da parte di Satoshi
     slug: bitcoin-org-registered
 
   - date: 2008-10-31
-    title: Publication du White Paper de Bitcoin par Satoshi Nakamoto
+    title_fr: Publication du White Paper de Bitcoin par Satoshi Nakamoto
+    title_en: Publication of the Bitcoin White Paper by Satoshi Nakamoto
+    title_es: Publicación del White Paper de Bitcoin por Satoshi Nakamoto
+    title_it: Pubblicazione del White Paper di Bitcoin da parte di Satoshi Nakamoto
     slug: bitcoin-whitepaper-published
 
   - date: 2008-11-09
-    title: Inscription du projet Bitcoin sur SourceForge (début du développement public)
+    title_fr: Inscription du projet Bitcoin sur SourceForge (début du développement public)
+    title_en: Bitcoin project listed on SourceForge (start of public development)
+    title_es: Inscripción del proyecto Bitcoin en SourceForge (inicio del desarrollo público)
+    title_it: Iscrizione del progetto Bitcoin su SourceForge (inizio dello sviluppo pubblico)
     slug: bitcoin-sourceforge-listed
 
   - date: 2009-01-03
-    title: Genèse de Bitcoin - minage du bloc Genesis (bloc 0)
+    title_fr: Genèse de Bitcoin - minage du bloc Genesis (bloc 0)
+    title_en: Bitcoin genesis - mining of the Genesis block (block 0)
+    title_es: Génesis de Bitcoin - minado del bloque Génesis (bloque 0)
+    title_it: Genesi di Bitcoin - mining del blocco Genesis (blocco 0)
     slug: genesis-block-mined
 
   - date: 2009-01-09
-    title: Sortie du logiciel Bitcoin v0.1
+    title_fr: Sortie du logiciel Bitcoin v0.1
+    title_en: Release of Bitcoin software v0.1
+    title_es: Lanzamiento del software Bitcoin v0.1
+    title_it: Rilascio del software Bitcoin v0.1
     slug: bitcoin-v0-1-released
 
   - date: 2009-01-11
-    title: Hal Finney annonce "Running bitcoin" sur Twitter (premier tweet à propos de Bitcoin)
+    title_fr: Hal Finney annonce "Running bitcoin" sur Twitter (premier tweet à propos de Bitcoin)
+    title_en: Hal Finney posts "Running bitcoin" on Twitter (first tweet about Bitcoin)
+    title_es: Hal Finney publica "Running bitcoin" en Twitter (primer tuit sobre Bitcoin)
+    title_it: Hal Finney pubblica "Running bitcoin" su Twitter (primo tweet su Bitcoin)
     slug: running-bitcoin-tweet
 
   - date: 2009-01-12
-    title: Première transaction Bitcoin (10 BTC de Satoshi vers Hal Finney, bloc 170)
+    title_fr: Première transaction Bitcoin (10 BTC de Satoshi vers Hal Finney, bloc 170)
+    title_en: First Bitcoin transaction (10 BTC from Satoshi to Hal Finney, block 170)
+    title_es: Primera transacción Bitcoin (10 BTC de Satoshi a Hal Finney, bloque 170)
+    title_it: Prima transazione Bitcoin (10 BTC da Satoshi a Hal Finney, blocco 170)
     slug: first-bitcoin-transaction
 
   - date: 2009-10-05
-    title: Premier taux de change proposé - 1 USD ≈ 1 309 BTC (New Liberty Standard)
+    title_fr: Premier taux de change proposé - 1 USD ≈ 1 309 BTC (New Liberty Standard)
+    title_en: First proposed exchange rate - 1 USD ≈ 1,309 BTC (New Liberty Standard)
+    title_es: Primer tipo de cambio propuesto - 1 USD ≈ 1.309 BTC (New Liberty Standard)
+    title_it: Primo tasso di cambio proposto - 1 USD ≈ 1.309 BTC (New Liberty Standard)
     slug: first-btc-usd-rate
 
   - date: 2009-10-12
-    title: Première vente connue de BTC contre des dollars (5 050 BTC pour 5,02 USD par Martti Malmi)
+    title_fr: Première vente connue de BTC contre des dollars (5 050 BTC pour 5,02 USD par Martti Malmi)
+    title_en: First known BTC sale for dollars (5,050 BTC for 5.02 USD by Martti Malmi)
+    title_es: Primera venta conocida de BTC por dólares (5.050 BTC por 5,02 USD por Martti Malmi)
+    title_it: Prima vendita conosciuta di BTC contro dollari (5.050 BTC per 5,02 USD da Martti Malmi)
     slug: first-btc-sale-usd
 
   - date: 2009-11-22
-    title: Satoshi Nakamoto fonde le forum Bitcointalk.org (première communauté Bitcoin en ligne)
+    title_fr: Satoshi Nakamoto fonde le forum Bitcointalk.org (première communauté Bitcoin en ligne)
+    title_en: Satoshi Nakamoto founds the Bitcointalk.org forum (first online Bitcoin community)
+    title_es: Satoshi Nakamoto funda el foro Bitcointalk.org (primera comunidad Bitcoin en línea)
+    title_it: Satoshi Nakamoto fonda il forum Bitcointalk.org (prima comunità Bitcoin online)
     slug: bitcointalk-launched
 
   - date: 2009-12-16
-    title: Publication de Bitcoin v0.2
+    title_fr: Publication de Bitcoin v0.2
+    title_en: Release of Bitcoin v0.2
+    title_es: Publicación de Bitcoin v0.2
+    title_it: Pubblicazione di Bitcoin v0.2
     slug: bitcoin-v0-2-released
 
   - date: 2009-12-30
-    title: La difficulté de minage augmente pour la première fois (bloc 32 256)
+    title_fr: La difficulté de minage augmente pour la première fois (bloc 32 256)
+    title_en: Mining difficulty increases for the first time (block 32,256)
+    title_es: La dificultad de minado aumenta por primera vez (bloque 32.256)
+    title_it: La difficoltà di mining aumenta per la prima volta (blocco 32.256)
     slug: first-difficulty-adjustment
 
   - date: 2010-03-17
-    title: Ouverture de Bitcoin Market, première plateforme d'échange de bitcoins
+    title_fr: Ouverture de Bitcoin Market, première plateforme d'échange de bitcoins
+    title_en: Opening of Bitcoin Market, the first bitcoin exchange platform
+    title_es: Apertura de Bitcoin Market, la primera plataforma de intercambio de bitcoins
+    title_it: Apertura di Bitcoin Market, la prima piattaforma di scambio di bitcoin
     slug: bitcoinmarket-opened
 
   - date: 2010-05-22
-    title: Bitcoin Pizza Day - 2 pizzas achetées pour 10 000 BTC
+    title_fr: Bitcoin Pizza Day - 2 pizzas achetées pour 10 000 BTC
+    title_en: Bitcoin Pizza Day - 2 pizzas bought for 10,000 BTC
+    title_es: Bitcoin Pizza Day - 2 pizzas compradas por 10.000 BTC
+    title_it: Bitcoin Pizza Day - 2 pizze acquistate per 10.000 BTC
     slug: bitcoin-pizza-day
 
   - date: 2010-06-11
-    title: Lancement du premier "Bitcoin faucet" distribuant 5 BTC gratuitement à chacun
+    title_fr: Lancement du premier "Bitcoin faucet" distribuant 5 BTC gratuitement à chacun
+    title_en: Launch of the first Bitcoin faucet distributing 5 BTC for free
+    title_es: Lanzamiento del primer "Bitcoin faucet" que distribuía 5 BTC gratis
+    title_it: Lancio del primo "Bitcoin faucet" che distribuiva 5 BTC gratuitamente
     slug: first-bitcoin-faucet
 
   - date: 2010-07-18
-    title: Lancement de la plateforme d'échange Mt. Gox
+    title_fr: Lancement de la plateforme d'échange Mt. Gox
+    title_en: Launch of the Mt. Gox exchange platform
+    title_es: Lanzamiento de la plataforma de intercambio Mt. Gox
+    title_it: Lancio della piattaforma di scambio Mt. Gox
     slug: mtgox-launched
 
   - date: 2010-08-15
-    title: Bug d'inflation - 184 milliards de BTC créés par erreur (rollback du bloc 74 638)
+    title_fr: Bug d'inflation - 184 milliards de BTC créés par erreur (rollback du bloc 74 638)
+    title_en: Inflation bug - 184 billion BTC created by mistake (rollback of block 74,638)
+    title_es: Bug de inflación - 184 mil millones de BTC creados por error (rollback del bloque 74.638)
+    title_it: Bug di inflazione - 184 miliardi di BTC creati per errore (rollback del blocco 74.638)
     slug: inflation-bug-rollback
 
   - date: 2010-11-01
-    title: Adoption du logo Bitcoin ₿ par la communauté
+    title_fr: Adoption du logo Bitcoin ₿ par la communauté
+    title_en: Adoption of the Bitcoin ₿ logo by the community
+    title_es: Adopción del logo Bitcoin ₿ por la comunidad
+    title_it: Adozione del logo Bitcoin ₿ da parte della comunità
     slug: bitcoin-logo-adopted
 
   - date: 2010-11-08
-    title: Première utilisation du terme "shitcoin" pour qualifier une altcoin sans valeur
+    title_fr: Première utilisation du terme "shitcoin" pour qualifier une altcoin sans valeur
+    title_en: First use of the term "shitcoin" to describe a worthless altcoin
+    title_es: Primer uso del término "shitcoin" para describir una altcoin sin valor
+    title_it: Primo utilizzo del termine "shitcoin" per descrivere un'altcoin senza valore
     slug: term-shitcoin-coined
 
   - date: 2010-11-27
-    title: Création du premier pool de minage Bitcoin (Slush Pool)
+    title_fr: Création du premier pool de minage Bitcoin (Slush Pool)
+    title_en: Creation of the first Bitcoin mining pool (Slush Pool)
+    title_es: Creación del primer pool de minería Bitcoin (Slush Pool)
+    title_it: Creazione del primo pool di mining Bitcoin (Slush Pool)
     slug: slushpool-created
 
   - date: 2011-01-27
-    title: Lancement du marché anonyme Silk Road
+    title_fr: Lancement du marché anonyme Silk Road
+    title_en: Launch of the anonymous marketplace Silk Road
+    title_es: Lanzamiento del mercado anónimo Silk Road
+    title_it: Lancio del mercato anonimo Silk Road
     slug: silk-road-launched
 
   - date: 2011-02-09
-    title: 1 BTC = 1 USD pour la première fois (parité avec l'USD)
+    title_fr: 1 BTC = 1 USD pour la première fois (parité avec l'USD)
+    title_en: 1 BTC equals 1 USD for the first time (USD parity)
+    title_es: 1 BTC = 1 USD por primera vez (paridad con el USD)
+    title_it: 1 BTC = 1 USD per la prima volta (parità con il dollaro)
     slug: btc-parity-usd
 
   - date: 2011-04-23
-    title: Dernier message de Satoshi Nakamoto "Bitcoin est entre de bonnes mains" (puis il disparaît)
+    title_fr: Dernier message de Satoshi Nakamoto "Bitcoin est entre de bonnes mains" (puis il disparaît)
+    title_en: Satoshi Nakamoto's last message "Bitcoin is in good hands" (then he disappears)
+    title_es: Último mensaje de Satoshi Nakamoto "Bitcoin está en buenas manos" (luego desaparece)
+    title_it: Ultimo messaggio di Satoshi Nakamoto "Bitcoin è in buone mani" (poi scompare)
     slug: satoshi-last-message
 
   - date: 2011-06-14
-    title: WikiLeaks annonce accepter les dons en Bitcoin suite au blocus bancaire
+    title_fr: WikiLeaks annonce accepter les dons en Bitcoin suite au blocus bancaire
+    title_en: WikiLeaks announces it will accept Bitcoin donations following the banking blockade
+    title_es: WikiLeaks anuncia que aceptará donaciones en Bitcoin tras el bloqueo bancario
+    title_it: WikiLeaks annuncia che accetterà donazioni in Bitcoin dopo il blocco bancario
     slug: wikileaks-accepts-bitcoin
 
   - date: 2011-06-18
-    title: Présentation du concept de portefeuilles déterministes sur Bitcointalk (futur BIP-32)
+    title_fr: Présentation du concept de portefeuilles déterministes sur Bitcointalk (futur BIP-32)
+    title_en: Presentation of deterministic wallets concept on Bitcointalk (future BIP-32)
+    title_es: Presentación del concepto de carteras deterministas en Bitcointalk (futuro BIP-32)
+    title_it: Presentazione del concetto di wallet deterministici su Bitcointalk (futuro BIP-32)
     slug: deterministic-wallets-concept
 
   - date: 2011-06-19
-    title: Piratage de Mt. Gox
+    title_fr: Piratage de Mt. Gox
+    title_en: Mt. Gox hack
+    title_es: Hackeo de Mt. Gox
+    title_it: Attacco hacker a Mt. Gox
     slug: mtgox-hack
 
   - date: 2011-09-06
-    title: Mise en vente des premières pièces Bitcoin physiques Casascius (1 BTC matérialisé sous forme de pièce)
+    title_fr: Mise en vente des premières pièces Bitcoin physiques Casascius (1 BTC matérialisé sous forme de pièce)
+    title_en: First Casascius physical Bitcoin coins go on sale (1 BTC embodied in a coin)
+    title_es: Puesta a la venta de las primeras monedas físicas Casascius (1 BTC materializado en una moneda)
+    title_it: Messa in vendita delle prime monete fisiche Casascius (1 BTC materializzato in una moneta)
     slug: casascius-coins-sold
 
   - date: 2011-11-16
-    title: Plus grande transaction Bitcoin de l'histoire, ~550 000 BTC transférés (mouvements internes Mt. Gox)
+    title_fr: Plus grande transaction Bitcoin de l'histoire, ~550 000 BTC transférés (mouvements internes Mt. Gox)
+    title_en: Largest Bitcoin transaction in history, ~550,000 BTC transferred (internal Mt. Gox movements)
+    title_es: La mayor transacción de Bitcoin de la historia - ~550.000 BTC transferidos (movimientos internos de Mt. Gox)
+    title_it: La più grande transazione Bitcoin della storia - ~550.000 BTC trasferiti (movimenti interni Mt. Gox)
     slug: largest-btc-transfer
 
   - date: 2012-04-24
-    title: Lancement du site de pari SatoshiDICE (micro-paris en bitcoins)
+    title_fr: Lancement du site de pari SatoshiDICE (micro-paris en bitcoins)
+    title_en: Launch of the SatoshiDICE betting site (bitcoin micro-betting)
+    title_es: Lanzamiento del sitio de apuestas SatoshiDICE (microapuestas en bitcoin)
+    title_it: Lancio del sito di scommesse SatoshiDICE (micro-scommesse in bitcoin)
     slug: satoshidice-launched
 
   - date: 2012-05-01
-    title: Parution du premier numéro du magazine "Bitcoin Magazine"
+    title_fr: Parution du premier numéro du magazine "Bitcoin Magazine"
+    title_en: Release of the first issue of "Bitcoin Magazine"
+    title_es: Publicación del primer número de la revista "Bitcoin Magazine"
+    title_it: Pubblicazione del primo numero della rivista "Bitcoin Magazine"
     slug: bitcoin-magazine-first-issue
 
   - date: 2012-09-27
-    title: Création de la Bitcoin Foundation pour soutenir le développement et la promotion de Bitcoin
+    title_fr: Création de la Bitcoin Foundation pour soutenir le développement et la promotion de Bitcoin
+    title_en: Creation of the Bitcoin Foundation to support Bitcoin development and promotion
+    title_es: Creación de la Bitcoin Foundation para apoyar el desarrollo y la promoción de Bitcoin
+    title_it: Creazione della Bitcoin Foundation per sostenere lo sviluppo e la promozione di Bitcoin
     slug: bitcoin-foundation-created
 
   - date: 2012-11-28
-    title: Premier halving de Bitcoin - la subvention de bloc passe de 50 à 25 BTC par bloc
+    title_fr: Premier halving de Bitcoin - la subvention de bloc passe de 50 à 25 BTC par bloc
+    title_en: First Bitcoin halving - block subsidy drops from 50 to 25 BTC
+    title_es: Primer halving de Bitcoin - la recompensa por bloque pasa de 50 a 25 BTC
+    title_it: Primo halving di Bitcoin - la ricompensa per blocco scende da 50 a 25 BTC
     slug: first-halving
 
   - date: 2013-03-12
-    title: Hard fork involontaire après une incompatibilité entre versions 0.7 et 0.8
+    title_fr: Hard fork involontaire après une incompatibilité entre versions 0.7 et 0.8
+    title_en: Unintentional hard fork following incompatibility between versions 0.7 and 0.8
+    title_es: Hard fork involuntario tras una incompatibilidad entre las versiones 0.7 y 0.8
+    title_it: Hard fork involontario dopo un'incompatibilità tra le versioni 0.7 e 0.8
     slug: accidental-hardfork-0-7-0-8
 
   - date: 2013-03-28
-    title: La capitalisation de Bitcoin dépasse 1 milliard de dollars
+    title_fr: La capitalisation de Bitcoin dépasse 1 milliard de dollars
+    title_en: Bitcoin market capitalization surpasses 1 billion dollars
+    title_es: La capitalización de Bitcoin supera los mil millones de dólares
+    title_it: La capitalizzazione di Bitcoin supera il miliardo di dollari
     slug: marketcap-1b
 
   - date: 2013-05-18
-    title: Première grande conférence Bitcoin aux États-Unis (San Jose, Californie)
+    title_fr: Première grande conférence Bitcoin aux États-Unis (San Jose, Californie)
+    title_en: First major Bitcoin conference in the United States (San Jose, California)
+    title_es: Primera gran conferencia Bitcoin en Estados Unidos (San José, California)
+    title_it: Prima grande conferenza Bitcoin negli Stati Uniti (San Jose, California)
     slug: first-us-bitcoin-conference
 
   - date: 2013-10-01
-    title: Fermeture de Silk Road par le FBI - arrestation de Ross Ulbricht (début du mouvement "Free Ross")
+    title_fr: Fermeture de Silk Road par le FBI - arrestation de Ross Ulbricht (début du mouvement "Free Ross")
+    title_en: Silk Road shut down by the FBI - arrest of Ross Ulbricht (start of the "Free Ross" movement)
+    title_es: Cierre de Silk Road por el FBI - arresto de Ross Ulbricht (inicio del movimiento "Free Ross")
+    title_it: Chiusura di Silk Road da parte dell'FBI - arresto di Ross Ulbricht (inizio del movimento "Free Ross")
     slug: silk-road-shutdown
 
   - date: 2013-10-29
-    title: Installation du premier distributeur de bitcoins (ATM) à Vancouver, Canada
+    title_fr: Installation du premier distributeur de bitcoins (ATM) à Vancouver, Canada
+    title_en: Installation of the first Bitcoin ATM in Vancouver, Canada
+    title_es: Instalación del primer cajero automático de Bitcoin en Vancouver, Canadá
+    title_it: Installazione del primo sportello automatico Bitcoin a Vancouver, Canada
     slug: first-bitcoin-atm
 
   - date: 2013-11-28
-    title: Le prix du Bitcoin dépasse 1 000 $ pour la première fois
+    title_fr: Le prix du Bitcoin dépasse 1 000 $ pour la première fois
+    title_en: Bitcoin price surpasses $1,000 for the first time
+    title_es: El precio de Bitcoin supera los 1.000 dólares por primera vez
+    title_it: Il prezzo di Bitcoin supera i 1.000 dollari per la prima volta
     slug: btc-1000-first-time
 
   - date: 2013-12-18
-    title: Naissance du mème "HODL" sur Bitcointalk ("I AM HODLING")
+    title_fr: Naissance du mème "HODL" sur Bitcointalk ("I AM HODLING")
+    title_en: Birth of the "HODL" meme on Bitcointalk ("I AM HODLING")
+    title_es: Nacimiento del meme "HODL" en Bitcointalk ("I AM HODLING")
+    title_it: Nascita del meme "HODL" su Bitcointalk ("I AM HODLING")
     slug: hodl-meme-born
 
   - date: 2014-02-24
-    title: Effondrement de Mt. Gox - la plateforme dépose le bilan
+    title_fr: Effondrement de Mt. Gox - la plateforme dépose le bilan
+    title_en: Collapse of Mt. Gox - the exchange files for bankruptcy
+    title_es: Colapso de Mt. Gox - la plataforma se declara en quiebra
+    title_it: Crollo di Mt. Gox - la piattaforma dichiara bancarotta
     slug: mtgox-bankruptcy
 
   - date: 2014-03-06
-    title: Newsweek prétend identifier Satoshi (Dorian Nakamoto) - celui-ci dément toute implication
+    title_fr: Newsweek prétend identifier Satoshi (Dorian Nakamoto) - celui-ci dément toute implication
+    title_en: Newsweek claims to identify Satoshi (Dorian Nakamoto), who denies any involvement
+    title_es: Newsweek afirma identificar a Satoshi (Dorian Nakamoto), quien niega toda implicación
+    title_it: Newsweek sostiene di aver identificato Satoshi (Dorian Nakamoto), che nega ogni coinvolgimento
     slug: newsweek-dorian-satoshi-claim
 
   - date: 2014-07-29
-    title: Sortie du Trezor One, premier portefeuille matériel pour bitcoins
+    title_fr: Sortie du Trezor One, premier portefeuille matériel pour bitcoins
+    title_en: Release of Trezor One, the first hardware wallet for bitcoins
+    title_es: Lanzamiento del Trezor One, el primer monedero hardware para bitcoins
+    title_it: Rilascio del Trezor One, il primo hardware wallet per bitcoin
     slug: trezor-one-released
 
   - date: 2014-12-20
-    title: Publication du livre "Mastering Bitcoin" d'Andreas Antonopoulos
+    title_fr: Publication du livre "Mastering Bitcoin" d'Andreas Antonopoulos
+    title_en: Publication of the book "Mastering Bitcoin" by Andreas Antonopoulos
+    title_es: Publicación del libro "Mastering Bitcoin" de Andreas Antonopoulos
+    title_it: Pubblicazione del libro "Mastering Bitcoin" di Andreas Antonopoulos
     slug: mastering-bitcoin-published
 
   - date: 2015-01-04
-    title: Piratage de l'exchange Bitstamp - ~19 000 BTC volés (l'exchange survit et rembourse)
+    title_fr: Piratage de l'exchange Bitstamp - ~19 000 BTC volés (l'exchange survit et rembourse)
+    title_en: Bitstamp exchange hack - ~19,000 BTC stolen (the exchange survives and reimburses)
+    title_es: Hackeo del exchange Bitstamp - ~19.000 BTC robados (el exchange sobrevive y reembolsa)
+    title_it: Attacco hacker all'exchange Bitstamp - ~19.000 BTC rubati (l'exchange sopravvive e rimborsa)
     slug: bitstamp-hack
 
   - date: 2015-02-23
-    title: Publication du premier papier de présentation du Lightning Network (Poon & Dryja)
+    title_fr: Publication du premier papier de présentation du Lightning Network (Poon & Dryja)
+    title_en: Publication of the first Lightning Network paper (Poon & Dryja)
+    title_es: Publicación del primer documento del Lightning Network (Poon y Dryja)
+    title_it: Pubblicazione del primo documento sul Lightning Network (Poon & Dryja)
     slug: lightning-network-paper
 
   - date: 2015-08-15
-    title: Début de la Blocksize War - lancement du client alternatif Bitcoin XT
+    title_fr: Début de la Blocksize War - lancement du client alternatif Bitcoin XT
+    title_en: Beginning of the Blocksize War - launch of the alternative client Bitcoin XT
+    title_es: Inicio de la Blocksize War - lanzamiento del cliente alternativo Bitcoin XT
+    title_it: Inizio della Blocksize War - lancio del client alternativo Bitcoin XT
     slug: blocksize-war-bitcoin-xt
 
   - date: 2016-07-09
-    title: Deuxième halving de Bitcoin - la subvention de bloc passe à 12,5 BTC
+    title_fr: Deuxième halving de Bitcoin - la subvention de bloc passe à 12,5 BTC
+    title_en: Second Bitcoin halving - block subsidy drops to 12.5 BTC
+    title_es: Segundo halving de Bitcoin - la recompensa por bloque baja a 12,5 BTC
+    title_it: Secondo halving di Bitcoin - la ricompensa per blocco scende a 12,5 BTC
     slug: second-halving
 
   - date: 2017-03-03
-    title: 1 BTC dépasse la valeur d'une once d'or (~1 250 USD)
+    title_fr: 1 BTC dépasse la valeur d'une once d'or (~1 250 USD)
+    title_en: 1 BTC surpasses the value of one ounce of gold (~$1,250)
+    title_es: 1 BTC supera el valor de una onza de oro (~1.250 USD)
+    title_it: 1 BTC supera il valore di un'oncia d'oro (~1.250 USD)
     slug: btc-above-gold
 
   - date: 2017-07-12
-    title: Buy Bitcoin - un sympathisant brandit un panneau pro-Bitcoin derrière Janet Yellen (buzz médiatique)
+    title_fr: Buy Bitcoin - un sympathisant brandit un panneau pro-Bitcoin derrière Janet Yellen (buzz médiatique)
+    title_en: Buy Bitcoin - a supporter holds a pro-Bitcoin sign behind Janet Yellen (media buzz)
+    title_es: Buy Bitcoin - un simpatizante muestra un cartel pro-Bitcoin detrás de Janet Yellen (revuelvo mediático)
+    title_it: Buy Bitcoin - un sostenitore mostra un cartello pro-Bitcoin dietro Janet Yellen (eco mediatico)
     slug: buy-bitcoin-yellen-sign
 
   - date: 2017-07-23
-    title: Activation du BIP-91 au bloc 477 120 qui vient forcer le signalement de SegWit
+    title_fr: Activation du BIP-91 au bloc 477 120 qui vient forcer le signalement de SegWit
+    title_en: Activation of BIP-91 at block 477,120, enforcing SegWit signaling
+    title_es: Activación del BIP-91 en el bloque 477.120, forzando la señalización de SegWit
+    title_it: Attivazione del BIP-91 al blocco 477.120, che forza la segnalazione di SegWit
     slug: bip91-activated
 
   - date: 2017-08-01
-    title: Hard fork de Bitcoin - création de Bitcoin Cash (BCH) au bloc 478 559
+    title_fr: Hard fork de Bitcoin - création de Bitcoin Cash (BCH) au bloc 478 559
+    title_en: Bitcoin hard fork - creation of Bitcoin Cash (BCH) at block 478,559
+    title_es: Hard fork de Bitcoin - creación de Bitcoin Cash (BCH) en el bloque 478.559
+    title_it: Hard fork di Bitcoin - creazione di Bitcoin Cash (BCH) al blocco 478.559
     slug: bitcoin-cash-fork
 
   - date: 2017-08-01
-    title: Bitcoin Independence Day - date limite fixée par l'UASF du BIP-148 qui devait forcer l'activation de SegWit
+    title_fr: Bitcoin Independence Day - date limite fixée par l'UASF du BIP-148 qui devait forcer l'activation de SegWit
+    title_en: Bitcoin Independence Day - UASF BIP-148 deadline intended to force SegWit activation
+    title_es: Bitcoin Independence Day - fecha límite fijada por el UASF del BIP-148 para forzar la activación de SegWit
+    title_it: Bitcoin Independence Day - scadenza fissata dall'UASF del BIP-148 per forzare l'attivazione di SegWit
     slug: bip148-uasf-deadline
 
   - date: 2017-08-09
-    title: SegWit atteint le seuil d'activation au bloc 479 808, il est verrouillé
+    title_fr: SegWit atteint le seuil d'activation au bloc 479 808, il est verrouillé
+    title_en: SegWit reaches the activation threshold at block 479,808 and is locked in
+    title_es: SegWit alcanza el umbral de activación en el bloque 479.808 y queda bloqueado
+    title_it: SegWit raggiunge la soglia di attivazione al blocco 479.808 ed è bloccato
     slug: segwit-locked-in
 
   - date: 2017-08-24
-    title: Activation de SegWit au bloc 481 824
+    title_fr: Activation de SegWit au bloc 481 824
+    title_en: SegWit activation at block 481,824
+    title_es: Activación de SegWit en el bloque 481.824
+    title_it: Attivazione di SegWit al blocco 481.824
     slug: segwit-activated
 
   - date: 2017-11-08
-    title: Abandon de la seconde partie de SegWit2X, destinée à doubler la taille des blocs (campagne NO2X)
+    title_fr: Abandon de la seconde partie de SegWit2X, destinée à doubler la taille des blocs (campagne NO2X)
+    title_en: Cancellation of the second phase of SegWit2X intended to double block size (NO2X campaign)
+    title_es: Cancelación de la segunda fase de SegWit2X destinada a duplicar el tamaño de los bloques (campaña NO2X)
+    title_it: Abbandono della seconda fase di SegWit2X, destinata a raddoppiare la dimensione dei blocchi (campagna NO2X)
     slug: segwit2x-canceled
 
   - date: 2020-03-12
-    title: Jeudi Noir - le bitcoin perd ~50 % en 24h (panique COVID, liquidation massive de positions)
+    title_fr: Jeudi Noir - le bitcoin perd ~50 % en 24h (panique COVID, liquidation massive de positions)
+    title_en: Black Thursday - bitcoin loses ~50% in 24h (COVID panic, massive liquidations)
+    title_es: Jueves Negro - bitcoin pierde ~50 % en 24 horas (pánico por COVID, liquidaciones masivas)
+    title_it: Giovedì Nero - bitcoin perde ~50% in 24 ore (panico COVID, liquidazioni massive)
     slug: black-thursday
 
   - date: 2020-05-11
-    title: Troisième halving de Bitcoin - la subvention de bloc passe à 6,25 BTC
+    title_fr: Troisième halving de Bitcoin - la subvention de bloc passe à 6,25 BTC
+    title_en: Third Bitcoin halving - block subsidy drops to 6.25 BTC
+    title_es: Tercer halving de Bitcoin - la recompensa por bloque baja a 6,25 BTC
+    title_it: Terzo halving di Bitcoin - la ricompensa per blocco scende a 6,25 BTC
     slug: third-halving
 
   - date: 2020-08-11
-    title: MicroStrategy devient la première société cotée à investir sa trésorerie en Bitcoin (250 M$ pour 21 454 BTC)
-    slug: microstrategy-buys-bitcoin
+    title_fr: MicroStrategy devient la première société cotée à investir sa trésorerie en Bitcoin (250 M$ pour 21 454 BTC)
+    title_en: MicroStrategy becomes the first publicly traded company to invest its treasury in Bitcoin ($250M for 21,454 BTC)
+    title_es: MicroStrategy se convierte en la primera empresa cotizada en invertir su tesorería en Bitcoin (250 M$ por 21.454 BTC)
+    title_it: MicroStrategy diventa la prima società quotata a investire la propria tesoreria in Bitcoin (250 M$ per 21.454 BTC)
+    slug: mstr-buys-bitcoin
 
   - date: 2021-02-19
-    title: La capitalisation de Bitcoin dépasse 1 000 milliards de dollars
+    title_fr: La capitalisation de Bitcoin dépasse 1 000 milliards de dollars
+    title_en: Bitcoin market capitalization surpasses 1 trillion dollars
+    title_es: La capitalización de Bitcoin supera el billón de dólares
+    title_it: La capitalizzazione di Bitcoin supera i mille miliardi di dollari
     slug: marketcap-1t
 
   - date: 2021-06-12
-    title: Seuil d'activation de Taproot atteint par les mineurs (mise à jour programmée pour novembre 2021)
+    title_fr: Seuil d'activation de Taproot atteint par les mineurs (mise à jour programmée pour novembre 2021)
+    title_en: Taproot activation threshold reached by miners (upgrade scheduled for November 2021)
+    title_es: Umbral de activación de Taproot alcanzado por los mineros (actualización prevista para noviembre de 2021)
+    title_it: Soglia di attivazione di Taproot raggiunta dai miner (aggiornamento previsto per novembre 2021)
     slug: taproot-threshold-reached
 
   - date: 2021-09-07
-    title: Le Salvador adopte officiellement le Bitcoin comme monnaie légale (première mondiale)
+    title_fr: Le Salvador adopte officiellement le Bitcoin comme monnaie légale
+    title_en: El Salvador officially adopts Bitcoin as legal tender
+    title_es: El Salvador adopta oficialmente Bitcoin como moneda de curso legal
+    title_it: El Salvador adotta ufficialmente Bitcoin come moneta legale
     slug: el-salvador-legal-tender
 
   - date: 2021-10-19
-    title: Lancement du premier ETF Bitcoin aux USA (ProShares BITO, basé sur des futures BTC)
+    title_fr: Lancement du premier ETF Bitcoin aux USA (ProShares BITO, basé sur des futures BTC)
+    title_en: Launch of the first Bitcoin ETF in the USA (ProShares BITO, based on BTC futures)
+    title_es: Lanzamiento del primer ETF de Bitcoin en EE. UU. (ProShares BITO, basado en futuros de BTC)
+    title_it: Lancio del primo ETF Bitcoin negli Stati Uniti (ProShares BITO, basato su futures BTC)
     slug: first-us-bitcoin-etf
 
   - date: 2021-11-14
-    title: Activation du soft fork Taproot sur Bitcoin
+    title_fr: Activation du soft fork Taproot sur Bitcoin
+    title_en: Activation of the Taproot soft fork on Bitcoin
+    title_es: Activación del soft fork Taproot en Bitcoin
+    title_it: Attivazione del soft fork Taproot su Bitcoin
     slug: taproot-activated
+
+  - date: 2024-04-24
+    title_fr: Arrestation des développeurs de Samourai Wallet
+    title_en: Arrest of the Samourai Wallet developers
+    title_es: Arresto de los desarrolladores de Samourai Wallet
+    title_it: Arresto degli sviluppatori di Samourai Wallet
+    slug: samourai-dev-arrested
