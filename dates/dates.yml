@@ -4,216 +4,288 @@ author: Loic
 events:
   - date: 1992-11-22
     title: Publication du "Crypto Anarchist Manifesto" de Timothy C. May
+    slug: crypto-anarchist-manifesto
 
   - date: 1993-03-09
     title: Publication du "Cypherpunk Manifesto" d'Eric Hughes
+    slug: cypherpunk-manifesto
 
   - date: 1994-05-27
     title: Premier paiement électronique en eCash de DigiCash (David Chaum)
+    slug: digicash-ecash-payment
 
   - date: 1997-03-28
     title: Annonce de Hashcash par Adam Back (système de preuve de travail anti-spam)
+    slug: hashcash-announced
 
   - date: 1998-11-26
     title: Wei Dai propose le concept de b-money (monnaie numérique décentralisée)
+    slug: b-money-proposed
 
   - date: 2002-09-20
     title: Première version alpha du réseau Tor (communication anonyme)
+    slug: tor-alpha-release
 
   - date: 2003-09-15
     title: Lancement du site de partage P2P The Pirate Bay
+    slug: pirate-bay-launched
 
   - date: 2004-08-15
     title: Hal Finney lance RPOW (Reusable Proofs of Work, précurseur direct de Bitcoin)
+    slug: rpow-launched
 
   - date: 2005-12-29
     title: Nick Szabo décrit le projet Bit Gold (concept de monnaie numérique rare)
+    slug: bit-gold-described
 
   - date: 2008-08-18
     title: Enregistrement du domaine bitcoin.org par Satoshi
+    slug: bitcoin-org-registered
 
   - date: 2008-10-31
     title: Publication du White Paper de Bitcoin par Satoshi Nakamoto
+    slug: bitcoin-whitepaper-published
 
   - date: 2008-11-09
     title: Inscription du projet Bitcoin sur SourceForge (début du développement public)
+    slug: bitcoin-sourceforge-listed
 
   - date: 2009-01-03
     title: Genèse de Bitcoin - minage du bloc Genesis (bloc 0)
+    slug: genesis-block-mined
 
   - date: 2009-01-09
     title: Sortie du logiciel Bitcoin v0.1
+    slug: bitcoin-v0-1-released
 
   - date: 2009-01-11
     title: Hal Finney annonce "Running bitcoin" sur Twitter (premier tweet à propos de Bitcoin)
+    slug: running-bitcoin-tweet
 
   - date: 2009-01-12
     title: Première transaction Bitcoin (10 BTC de Satoshi vers Hal Finney, bloc 170)
+    slug: first-bitcoin-transaction
 
   - date: 2009-10-05
     title: Premier taux de change proposé - 1 USD ≈ 1 309 BTC (New Liberty Standard)
+    slug: first-btc-usd-rate
 
   - date: 2009-10-12
     title: Première vente connue de BTC contre des dollars (5 050 BTC pour 5,02 USD par Martti Malmi)
+    slug: first-btc-sale-usd
 
   - date: 2009-11-22
     title: Satoshi Nakamoto fonde le forum Bitcointalk.org (première communauté Bitcoin en ligne)
+    slug: bitcointalk-launched
 
   - date: 2009-12-16
     title: Publication de Bitcoin v0.2
+    slug: bitcoin-v0-2-released
 
   - date: 2009-12-30
     title: La difficulté de minage augmente pour la première fois (bloc 32 256)
+    slug: first-difficulty-adjustment
 
   - date: 2010-03-17
     title: Ouverture de Bitcoin Market, première plateforme d'échange de bitcoins
+    slug: bitcoinmarket-opened
 
   - date: 2010-05-22
     title: Bitcoin Pizza Day - 2 pizzas achetées pour 10 000 BTC
+    slug: bitcoin-pizza-day
 
   - date: 2010-06-11
     title: Lancement du premier "Bitcoin faucet" distribuant 5 BTC gratuitement à chacun
+    slug: first-bitcoin-faucet
 
   - date: 2010-07-18
     title: Lancement de la plateforme d'échange Mt. Gox
+    slug: mtgox-launched
 
   - date: 2010-08-15
     title: Bug d'inflation - 184 milliards de BTC créés par erreur (rollback du bloc 74 638)
+    slug: inflation-bug-rollback
 
   - date: 2010-11-01
     title: Adoption du logo Bitcoin ₿ par la communauté
+    slug: bitcoin-logo-adopted
 
   - date: 2010-11-08
     title: Première utilisation du terme "shitcoin" pour qualifier une altcoin sans valeur
+    slug: term-shitcoin-coined
 
   - date: 2010-11-27
     title: Création du premier pool de minage Bitcoin (Slush Pool)
+    slug: slushpool-created
 
   - date: 2011-01-27
     title: Lancement du marché anonyme Silk Road
+    slug: silk-road-launched
 
   - date: 2011-02-09
     title: 1 BTC = 1 USD pour la première fois (parité avec l'USD)
+    slug: btc-parity-usd
 
   - date: 2011-04-23
     title: Dernier message de Satoshi Nakamoto "Bitcoin est entre de bonnes mains" (puis il disparaît)
+    slug: satoshi-last-message
 
   - date: 2011-06-14
     title: WikiLeaks annonce accepter les dons en Bitcoin suite au blocus bancaire
+    slug: wikileaks-accepts-bitcoin
 
   - date: 2011-06-18
     title: Présentation du concept de portefeuilles déterministes sur Bitcointalk (futur BIP-32)
+    slug: deterministic-wallets-concept
 
   - date: 2011-06-19
     title: Piratage de Mt. Gox
+    slug: mtgox-hack
 
   - date: 2011-09-06
     title: Mise en vente des premières pièces Bitcoin physiques Casascius (1 BTC matérialisé sous forme de pièce)
+    slug: casascius-coins-sold
 
   - date: 2011-11-16
     title: Plus grande transaction Bitcoin de l'histoire, ~550 000 BTC transférés (mouvements internes Mt. Gox)
+    slug: largest-btc-transfer
 
   - date: 2012-04-24
     title: Lancement du site de pari SatoshiDICE (micro-paris en bitcoins)
+    slug: satoshidice-launched
 
   - date: 2012-05-01
     title: Parution du premier numéro du magazine "Bitcoin Magazine"
+    slug: bitcoin-magazine-first-issue
 
   - date: 2012-09-27
     title: Création de la Bitcoin Foundation pour soutenir le développement et la promotion de Bitcoin
+    slug: bitcoin-foundation-created
 
   - date: 2012-11-28
     title: Premier halving de Bitcoin - la subvention de bloc passe de 50 à 25 BTC par bloc
+    slug: first-halving
 
   - date: 2013-03-12
     title: Hard fork involontaire après une incompatibilité entre versions 0.7 et 0.8
+    slug: accidental-hardfork-0-7-0-8
 
   - date: 2013-03-28
     title: La capitalisation de Bitcoin dépasse 1 milliard de dollars
+    slug: marketcap-1b
 
   - date: 2013-05-18
     title: Première grande conférence Bitcoin aux États-Unis (San Jose, Californie)
+    slug: first-us-bitcoin-conference
 
   - date: 2013-10-01
     title: Fermeture de Silk Road par le FBI - arrestation de Ross Ulbricht (début du mouvement "Free Ross")
+    slug: silk-road-shutdown
 
   - date: 2013-10-29
     title: Installation du premier distributeur de bitcoins (ATM) à Vancouver, Canada
+    slug: first-bitcoin-atm
 
   - date: 2013-11-28
     title: Le prix du Bitcoin dépasse 1 000 $ pour la première fois
+    slug: btc-1000-first-time
 
   - date: 2013-12-18
     title: Naissance du mème "HODL" sur Bitcointalk ("I AM HODLING")
+    slug: hodl-meme-born
 
   - date: 2014-02-24
     title: Effondrement de Mt. Gox - la plateforme dépose le bilan
+    slug: mtgox-bankruptcy
 
   - date: 2014-03-06
     title: Newsweek prétend identifier Satoshi (Dorian Nakamoto) - celui-ci dément toute implication
+    slug: newsweek-dorian-satoshi-claim
 
   - date: 2014-07-29
     title: Sortie du Trezor One, premier portefeuille matériel pour bitcoins
+    slug: trezor-one-released
 
   - date: 2014-12-20
     title: Publication du livre "Mastering Bitcoin" d'Andreas Antonopoulos
+    slug: mastering-bitcoin-published
 
   - date: 2015-01-04
     title: Piratage de l'exchange Bitstamp - ~19 000 BTC volés (l'exchange survit et rembourse)
+    slug: bitstamp-hack
 
   - date: 2015-02-23
     title: Publication du premier papier de présentation du Lightning Network (Poon & Dryja)
+    slug: lightning-network-paper
 
   - date: 2015-08-15
     title: Début de la Blocksize War - lancement du client alternatif Bitcoin XT
+    slug: blocksize-war-bitcoin-xt
 
   - date: 2016-07-09
     title: Deuxième halving de Bitcoin - la subvention de bloc passe à 12,5 BTC
+    slug: second-halving
 
   - date: 2017-03-03
     title: 1 BTC dépasse la valeur d'une once d'or (~1 250 USD)
+    slug: btc-above-gold
 
   - date: 2017-07-12
     title: Buy Bitcoin - un sympathisant brandit un panneau pro-Bitcoin derrière Janet Yellen (buzz médiatique)
+    slug: buy-bitcoin-yellen-sign
 
   - date: 2017-07-23
     title: Activation du BIP-91 au bloc 477 120 qui vient forcer le signalement de SegWit
+    slug: bip91-activated
 
   - date: 2017-08-01
     title: Hard fork de Bitcoin - création de Bitcoin Cash (BCH) au bloc 478 559
+    slug: bitcoin-cash-fork
 
   - date: 2017-08-01
     title: Bitcoin Independence Day - date limite fixée par l'UASF du BIP-148 qui devait forcer l'activation de SegWit
+    slug: bip148-uasf-deadline
 
   - date: 2017-08-09
     title: SegWit atteint le seuil d'activation au bloc 479 808, il est verrouillé
+    slug: segwit-locked-in
 
   - date: 2017-08-24
     title: Activation de SegWit au bloc 481 824
+    slug: segwit-activated
 
   - date: 2017-11-08
     title: Abandon de la seconde partie de SegWit2X, destinée à doubler la taille des blocs (campagne NO2X)
+    slug: segwit2x-canceled
 
   - date: 2020-03-12
     title: Jeudi Noir - le bitcoin perd ~50 % en 24h (panique COVID, liquidation massive de positions)
+    slug: black-thursday
 
   - date: 2020-05-11
     title: Troisième halving de Bitcoin - la subvention de bloc passe à 6,25 BTC
+    slug: third-halving
 
   - date: 2020-08-11
     title: MicroStrategy devient la première société cotée à investir sa trésorerie en Bitcoin (250 M$ pour 21 454 BTC)
+    slug: microstrategy-buys-bitcoin
 
   - date: 2021-02-19
     title: La capitalisation de Bitcoin dépasse 1 000 milliards de dollars
+    slug: marketcap-1t
 
   - date: 2021-06-12
     title: Seuil d'activation de Taproot atteint par les mineurs (mise à jour programmée pour novembre 2021)
+    slug: taproot-threshold-reached
 
   - date: 2021-09-07
     title: Le Salvador adopte officiellement le Bitcoin comme monnaie légale (première mondiale)
+    slug: el-salvador-legal-tender
 
   - date: 2021-10-19
     title: Lancement du premier ETF Bitcoin aux USA (ProShares BITO, basé sur des futures BTC)
+    slug: first-us-bitcoin-etf
 
   - date: 2021-11-14
     title: Activation du soft fork Taproot sur Bitcoin
+    slug: taproot-activated
