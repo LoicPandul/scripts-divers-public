@@ -102,7 +102,7 @@ events:
     title: WikiLeaks annonce accepter les dons en Bitcoin suite au blocus bancaire
 
   - date: 2011-06-18
-    title: Présentation du concept de portefeuilles déterministes (BIP32) sur Bitcointalk
+    title: Présentation du concept de portefeuilles déterministes sur Bitcointalk (futur BIP-32)
 
   - date: 2011-06-19
     title: Piratage de Mt. Gox
@@ -183,7 +183,7 @@ events:
     title: Hard fork de Bitcoin - création de Bitcoin Cash (BCH) au bloc 478 559
 
   - date: 2017-08-01
-    title: Bitcoin Independence Day - date limite fixée par l'UASF du BIP-148 qui devait forcer l'activtion de SegWit
+    title: Bitcoin Independence Day - date limite fixée par l'UASF du BIP-148 qui devait forcer l'activation de SegWit
 
   - date: 2017-08-09
     title: SegWit atteint le seuil d'activation au bloc 479 808, il est verrouillé
@@ -192,7 +192,7 @@ events:
     title: Activation de SegWit au bloc 481 824
 
   - date: 2017-11-08
-    title: Abandont de la seconde partie de SegWit2X, destinée à doubler la taille des blocs (campagne "NO2X")
+    title: Abandon de la seconde partie de SegWit2X, destinée à doubler la taille des blocs (campagne NO2X)
 
   - date: 2020-03-12
     title: Jeudi Noir - le bitcoin perd ~50 % en 24h (panique COVID, liquidation massive de positions)
@@ -205,9 +205,6 @@ events:
 
   - date: 2021-02-19
     title: La capitalisation de Bitcoin dépasse 1 000 milliards de dollars
-
-  - date: 2021-05-14
-    title: La Chine interdit le minage de Bitcoin - 50 % du hashrate offline, migration massive des mineurs à l'étranger
 
   - date: 2021-06-12
     title: Seuil d'activation de Taproot atteint par les mineurs (mise à jour programmée pour novembre 2021)
